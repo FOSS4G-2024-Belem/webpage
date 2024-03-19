@@ -20,16 +20,17 @@ about:
   enable : true
   title : "About FOSS4G"
   image : "images/proposta_logo_sticker.png"
-  content : "FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation.<br> <br> {{< youtube VTou906-Kj8 >}}"
+  content : "Organized by OSGeo and with more than 15 years of experience, this international annual gathering of location enthusiasts is the largest global gathering for geospatial software. <br><br>
+FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation. Through seven days of workshops, presentations, discussions, and cooperation, FOSS4G participants create effective and relevant geospatial products, standards, and protocols."
   button_solid:
-    enable : false
+    enable : true
     label : "Buy ticket"
     link : "pricing/"
   button_outline:
     enable : false
     label : "Read more"
     link : "about/"
-
+  video : "{{< youtube VTou906-Kj8 >}}"
 
 ################# Speaker ###################
 speakers:

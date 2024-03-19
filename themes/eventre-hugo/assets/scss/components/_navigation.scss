@@ -4,7 +4,7 @@
 		position: relative;
 	}
 	.navbar-brand{
-		padding: 35px 40px 35px 50px;
+		padding: 10px;
 		border-right: 1px solid $border-color;
 		@include large-desktop {
 			padding: 20px 30px;
@@ -111,15 +111,18 @@
 	.ticket{
 		background: $primary-color;
 		display: block;
-		padding: 34px 32px;
+		padding: 10px 15px;
+		margin-right: 20px;
+		border-radius: 4px;
 		@include large-desktop {
-			padding: 23px 14px;
+			//padding: 23px 14px;
 		}
 		@include desktop-sm{
 			text-align: center;
 		}
 		img{
-			margin-right: 25px;
+			display: none;
+			//margin-right: 25px;
 			@include large-desktop {
 				display: none;
 			}
@@ -129,12 +132,12 @@
 			font-size: 1.125rem;
 			text-transform: uppercase;
 			font-family: $secondary-font;
-			border-left: 1px solid #ffa366;
-			padding-left: 24px;
+			//border-left: 1px solid #ffa366;
+			//padding-left: 24px;
 			@include large-desktop {
-				padding-left: 0;
-				font-size: 1rem;
-				border-left: none;
+				//padding-left: 0;
+				//font-size: 1rem;
+				//border-left: none;
 			}
 		}
 	}
