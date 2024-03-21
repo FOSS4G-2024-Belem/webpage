@@ -32,6 +32,38 @@ FOSS4G brings together developers, users, decision-makers and observers from a b
     link : "about/"
   video : "{{< youtube VTou906-Kj8 >}}"
 
+
+################# Latest ###################
+latest:
+  enable: true
+  title : "Latest news"
+  content : "Organized by OSGeo and with more than 15 years of experience, this international annual gathering of location enthusiasts is the largest global gathering for geospatial software.<br><br>
+FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation. Through seven days of workshops, presentations, discussions, and cooperation, FOSS4G participants create effective and relevant geospatial products, standards, and protocols."
+
+################# Promote ###################
+promote:
+  enable: true
+  title : "A little text to become a partner or promote something specific about the event."
+  button_solid:
+    enable : true
+    label : "Join Today"
+    link : "pricing/"
+  button_outline:
+    enable : true
+    label : "Contact Us"
+    link : "about/"
+
+
+################# Speaker ###################
+finaltext:
+  enable: true
+  titleSection : "titulo seccion"
+  title1 : "titulo1"
+  content1 : "texto1"
+  title2 : "titulo1"
+  content2 : "texto1"
+
+
 ################# Speaker ###################
 speakers:
   enable : false
@@ -260,7 +292,7 @@ call_to_action:
 
 ############### Sponsors ##################
 sponsors:
-  enable : true
+  enable : false
   title : "Our partners, supporters, and sponsors"
   content : "Sponsors are the pillar that drives the FOSS4G conference. Join us to be forcibly behind geospatial innovation and stand out as an essential partner in this technological journey. Your support is key to making this path possible."
   button:

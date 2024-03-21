@@ -68,34 +68,58 @@
 =            Footer            =
 =============================-->
 
+<style>
+	.social-links-footer a {
+		display: flex;
+		width: 40px;
+		height: 40px;
+		background-color: white;
+		border-radius: 50%;
+		justify-content: center;
+		align-items: center;
+	}
+	.social-links-footer i {
+		color: #ff6600;
+		font-size: 1.3em;
+	}
+	.iconsContainer {
+		display: flex; 
+		align-items: flex-end; 
+		justify-content: flex-end;
+	}
+</style>
+
 <footer class="footer-main">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="block text-center">
-					<div class="footer-logo">
-						<a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
-							{{ if site.Params.logo }}
-							<img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo_footer | absURL}}"
-								alt="{{ site.Title }}">
-							{{ else }}
-							{{site.Title}}
-							{{ end }}
-						</a>
-					</div>
-					<ul class="social-links-footer list-inline">
-						{{ range site.Params.social}}
-						<li class="list-inline-item">
-							<a href="{{ .link | safeURL }}"><i class="fa-brands {{.icon}}"></i></a>
-						</li>
+		<div class="row" style="padding-bottom: 0;">
+			<div class="col-md-6">
+				<div class="footer-logo">
+					<a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+						{{ if site.Params.logo }}
+						<img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo_footer | absURL}}"
+							alt="{{ site.Title }}">
+						{{ else }}
+						{{site.Title}}
 						{{ end }}
-					</ul>
+					</a>
 				</div>
+			</div>
+			<div class="col-md-6 iconsContainer">
+				<ul class="social-links-footer list-inline">
+					{{ range site.Params.social}}
+					<li class="list-inline-item">
+						<a href="{{ .link | safeURL }}"><i class="fa-brands {{.icon}}"></i></a>
+					</li>
+					{{ end }}
+				</ul>
 			</div>
 		</div>
 	</div>
 </footer>
-<!-- Subfooter -->
+
+
+<!-- Subfooter 
+
 <footer class="subfooter">
 	<div class="container">
 		<div class="row">
@@ -110,6 +134,7 @@
 		</div>
 	</div>
 </footer>
+-->
 
 
 {{ "<!-- Google Map API -->" | safeHTML }}

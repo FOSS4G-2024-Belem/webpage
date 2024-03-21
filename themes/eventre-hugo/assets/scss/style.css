@@ -1,5 +1,5 @@
 /*=== MEDIA QUERY ===*/
-@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Roboto:300,400,500,700");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,600,700|Roboto:300,400,500,700");
 html {
   font-size: 16px;
 }
@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #222222;
   font-weight: 600;
 }
@@ -121,7 +121,7 @@ ul.social-links li a i {
 
 .text-overlay:after {
   content: "CONFERENCE";
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 600;
   font-size: 215px;
   width: 100%;
@@ -493,7 +493,7 @@ select.form-control:not([size]):not([multiple]) {
 
 .btn {
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   transition: all 0.3s ease;
 }
 
@@ -611,7 +611,7 @@ select.form-control:not([size]):not([multiple]) {
   padding-left: 8px;
   padding-right: 20px;
   font-size: 1.06rem;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 @media (max-width: 1352px) {
   .main-nav .navbar-nav .nav-item .nav-link {
@@ -717,7 +717,7 @@ select.form-control:not([size]):not([multiple]) {
   color: #fff;
   font-size: 1.125rem;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .navbar-toggler:focus, .navbar-toggler:hover {
   outline: none;
@@ -754,43 +754,46 @@ select.form-control:not([size]):not([multiple]) {
 }
 
 .footer-main {
-  background: #272735;
-  padding: 90px 0;
+  background: #000;
+  padding: 30px 0;
+  /*.block {
+    img {
+      margin-bottom: 60px;
+    }
+
+    ul.social-links-footer {
+      margin-bottom: 0;
+      .list-inline-item:not(:last-child) {
+        margin-right: 20px;
+        @include mobile {
+          margin-right: 5px;
+        }
+      }
+      li {
+        a {
+          display: block;
+          height: 50px;
+          width: 50px;
+          text-align: center;
+          background: $light;
+          i {
+            line-height: 50px;
+          }
+          &:hover {
+            background: $primary-color;
+            i {
+              color: $light;
+            }
+          }
+        }
+      }
+    }
+  }*/
 }
 @media (max-width: 767px) {
   .footer-main {
     padding: 50px 0;
   }
-}
-.footer-main .block img {
-  margin-bottom: 60px;
-}
-.footer-main .block ul.social-links-footer {
-  margin-bottom: 0;
-}
-.footer-main .block ul.social-links-footer .list-inline-item:not(:last-child) {
-  margin-right: 20px;
-}
-@media (max-width: 575px) {
-  .footer-main .block ul.social-links-footer .list-inline-item:not(:last-child) {
-    margin-right: 5px;
-  }
-}
-.footer-main .block ul.social-links-footer li a {
-  display: block;
-  height: 50px;
-  width: 50px;
-  text-align: center;
-  background: #fff;
-}
-.footer-main .block ul.social-links-footer li a i {
-  line-height: 50px;
-}
-.footer-main .block ul.social-links-footer li a:hover {
-  background: #ff6600;
-}
-.footer-main .block ul.social-links-footer li a:hover i {
-  color: #fff;
 }
 
 .subfooter {
@@ -798,7 +801,7 @@ select.form-control:not([size]):not([multiple]) {
   padding: 18px 0;
 }
 .subfooter .copyright-text p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .subfooter .copyright-text p a {
   color: #ff6600;
@@ -908,7 +911,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 .banner .block .timer .syotimer-cell .syotimer-cell__value {
   min-width: 80px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 35px;
   line-height: 77px;
   text-align: center;
@@ -938,7 +941,7 @@ select.form-control:not([size]):not([multiple]) {
   text-transform: lowercase;
   font-weight: normal;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .banner .block h1 {
   text-transform: uppercase;
@@ -1229,7 +1232,7 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 .schedule .schedule-tab ul li.nav-item a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
   font-size: 1.5rem;
   color: #ff6600;
@@ -1341,7 +1344,7 @@ select.form-control:not([size]):not([multiple]) {
 .schedule .schedule-contents .schedule-item li.headings div {
   color: #fff;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .schedule .schedule-contents .schedule-item li.schedule-details {
   border-bottom: 1px solid;
@@ -1357,7 +1360,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 .schedule .schedule-contents .schedule-item li.schedule-details .block div {
   color: #222222;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .schedule .schedule-contents .schedule-item li.schedule-details .block div i {
   font-size: 1.1875em;
@@ -1411,7 +1414,7 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 .schedule.two .schedule-tab ul li.nav-item a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
   color: #222222;
@@ -1524,7 +1527,7 @@ select.form-control:not([size]):not([multiple]) {
 .schedule.two .schedule-contents .schedule-item li.headings div {
   color: #fff;
   text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .schedule.two .schedule-contents .schedule-item li.schedule-details:not(:last-child) {
   border-bottom: 1px solid #e5e5e5;
@@ -1540,7 +1543,7 @@ select.form-control:not([size]):not([multiple]) {
   padding-top: 25px;
   padding-bottom: 25px;
   color: #222222;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .schedule.two .schedule-contents .schedule-item li.schedule-details .block div i {
   font-size: 1.1875em;
@@ -1607,7 +1610,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 .ticket-feature .block .timer .syotimer-cell .syotimer-cell__value {
   min-width: 80px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-size: 35px;
   height: 100px;
   width: 100px;
@@ -1636,7 +1639,7 @@ select.form-control:not([size]):not([multiple]) {
   text-transform: lowercase;
   font-weight: normal;
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .ticket-feature .block-2 {
   position: relative;
@@ -2032,7 +2035,7 @@ select.form-control:not([size]):not([multiple]) {
   }
 }
 .feature .testimonial p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin-bottom: 10px;
   font-style: italic;
   color: #242424;
@@ -2146,7 +2149,7 @@ select.form-control:not([size]):not([multiple]) {
   border-radius: 100%;
 }
 .testimonial .testimonial-slider .item .block p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-style: italic;
   color: #888888;
 }
@@ -2266,7 +2269,7 @@ select.form-control:not([size]):not([multiple]) {
   background-color: #ff6600;
 }
 .single-speaker .block-2 .skills .skill-bar .progress .progress-bar span {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   float: right;
   margin-top: -20px;
   color: #222222;
@@ -2297,7 +2300,7 @@ select.form-control:not([size]):not([multiple]) {
   color: #fff;
 }
 .speakers-full-width .speaker-slider .speaker-image .primary-overlay h5, .speakers-full-width .speaker-slider .speaker-image .primary-overlay p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 400;
 }
 .speakers-full-width .speaker-slider .speaker-image .primary-overlay h5 {
@@ -2359,7 +2362,7 @@ select.form-control:not([size]):not([multiple]) {
   background: transparent;
   border: none;
   cursor: pointer;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   margin-right: 25px;
 }
 @media (max-width: 767px) {
@@ -2633,7 +2636,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 .news .blog-post.single .post-details .share-block .tag p, .news .blog-post.single .post-details .share-block .tag ul {
   display: inline;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .news .blog-post.single .post-details .share-block .tag p {
   color: #222222;
@@ -2658,7 +2661,7 @@ select.form-control:not([size]):not([multiple]) {
 }
 .news .blog-post.single .post-details .share-block .share p, .news .blog-post.single .post-details .share-block .share ul {
   display: inline;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 .news .blog-post.single .post-details .share-block .share p {
   margin-right: 18px;
@@ -2945,7 +2948,7 @@ ul.pagination .active a {
   margin-top: -25px;
 }
 .news-hr .news-post-hr .post-contents .more a {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #222222;
   text-transform: uppercase;
   font-size: 14px;
@@ -3040,7 +3043,7 @@ p {
   align-self: center;
 }
 .testimonial .testimonial-item .media .media-body .name p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   color: #222222;
 }
 .testimonial .testimonial-item .media .media-body .profession p {
