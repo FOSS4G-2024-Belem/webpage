@@ -43,7 +43,7 @@
 <section class="section about">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-1 align-self-center">
+			<div class="col-md-1 d-none d-md-block">
 				<img src="images/ABOUT-FOSS4G.png" style="width: auto; height: 240px;">
 			</div>
 			<div class="col-md-5 align-self-center">
@@ -109,38 +109,78 @@
 		background-size: cover;
 	}
 	div.registerItem {
-		padding: 15px;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+    	justify-content: flex-end;
 	}
-	section.registerGrid div:nth-child(2) {
+	section.registerGrid div.registerItem:nth-child(2) {
 		background: url("images/workshops-background.png");
 	}
-	section.registerGrid div:nth-child(3) {
+	section.registerGrid div.registerItem:nth-child(3) {
 		background-color: black;
 	}
-	section.registerGrid div:nth-child(4) {
+	section.registerGrid div.registerItem:nth-child(4) {
 		background: url("images/program-background.png");
 	}
-	section.registerGrid div:last-child {
+	section.registerGrid div.registerItem:nth-child(5) {
 		background: url("images/social-events-img.png");
 		background-size: cover;
 	}
 	
-	
-
+	@media (max-width:938px) {
+		section.registerGrid {
+			grid-template-columns: 1fr;
+		}
+		section.registerGrid > div {
+			aspect-ratio: 20/10;
+		}
+		section.registerGrid > div:first-child {
+			aspect-ratio: 1/1;
+		}
+	}
+	@media (min-width:939px) and (max-width:1275px) {
+		section.registerGrid h2 {
+			font-size: 3.25rem
+		}
+		section.registerGrid h3 {
+			font-size: 2.25rem
+		}
+	}
+	@media (min-width:1276px) {
+		section.registerGrid h2 {
+			font-size: 4rem
+		}
+		section.registerGrid h3 {
+			font-size: 3.25rem
+		}
+	}
 </style>
 
 <section class="registerGrid">
 	<div class="registerItemFeatured">
-		<h2>Register to the event</h2>
-		<img src="images/flechas_blanco.png" alt="">
-		<button>Register Now</button>
+		<div class="col-md-8" style="
+									background-color: #EE6F2E;
+									margin-top: 20px;
+									padding: 20px;
+									">
+			<h2>Register to the event</h2>
+		</div>
+		<div class="row">
+			<div class="col-md-4" style="text-align: right;">
+				<img src="images/flechas_blanco.png" style="transform: rotate(-90deg);" alt="">
+			</div>
+			<div class="col-md-4">
+				<button>Register Now</button>
+			</div>
+		</div>
 	</div>
 	<div class="registerItem">
 		<h3>Workshops</h3>
 		<p>See all here</p>
 	</div>
 	<div class="registerItem">
-		<img src="images/flechas_blanco.png" alt="">
+		<img src="images/flechas_blanco.png" style="height: 86px; width: 34px;" alt="">
 		<h3>Where to stay?</h3>
 	</div>
 	<div class="registerItem">
@@ -159,7 +199,9 @@
 
 <style>
 	section.latest {
-
+		background: url("images/belem-background.png");
+		background-position: 63% 73%;
+		background-repeat: no-repeat;
 	}
 	section.latest div.card {
 		margin-top: 30px;
@@ -168,41 +210,62 @@
 		background-color: gray;
 		height: 325px;
 	}
+	section.latest .cardContent {
+		padding: 20px;
+	}
+	section.latest	.cardMiddle {
+		margin-top: -30px !important;
+	}
+	@media (max-width:998px) {
+		section.latest {
+			background: none;
+		}
+		section.latest .col-md-4 {
+			min-width: 100%;
+		}
+		section.latest	.cardMiddle {
+			margin-top: 30px !important;
+		}
+	}
 </style>
-
-        
-
 
 {{ if site.Data.homepage.latest.enable }}
 {{ with site.Data.homepage.latest }}
 <section class="section latest bg-latest">
 	<div class="container">
-		<div class="row">
-			<div class="headingLatest col-md-6">
+		<div class="belem-background"></div>
+		<div class="row" style="padding-bottom: 0;">
+			<div class="col-sm-1 d-sm-none">
+				<img src="images/FIND-OUT.png" style="transform: scale(85%); position: absolute; left: 0;" alt="">
+			</div>
+			<div class="headingLatest col-lg-5 col-md-10 offset-md-1">
 				<h3>{{.title | markdownify}}</h3>
 				<p>{{ .content | markdownify}}</p>
 			</div>
 		</div>
 		<div class="row">
-				
-			<div class="col-md-4 offset-lg-8">
+			<div class="col-md-4 offset-lg-7">
 				<div class="card">
 					<div class="card-block">
 						<div class="cardImage"></div>
-						<h4 class="card-title">Card title</h4>
-						<p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-						<a href="#" class="card-link">link</a>
+						<div class="cardContent">
+							<h4 class="card-title">Card title</h4>
+							<p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+							<a href="#" class="card-link">link</a>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="col-md-4 offset-lg-4">
-				<div class="card" style="margin-top: -30px;">
+			<div class="col-md-4 offset-lg-3">
+				<div class="card cardMiddle">
 					<div class="card-block">
 						<div class="cardImage"></div>
-						<h4 class="card-title">Card title</h4>
-						<p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-						<a href="#" class="card-link">link</a>
+						<div class="cardContent">
+							<h4 class="card-title">Card title</h4>
+							<p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+							<a href="#" class="card-link">link</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -211,9 +274,11 @@
 				<div class="card">
 					<div class="card-block">
 						<div class="cardImage"></div>
-						<h4 class="card-title">Card title</h4>
-						<p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-						<a href="#" class="card-link">link</a>
+						<div class="cardContent">
+							<h4 class="card-title">Card title</h4>
+							<p class="card-text p-y-1">Some quick example text to build on the card title .</p>
+							<a href="#" class="card-link">link</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -242,6 +307,17 @@
 		color: white;
 		font-weight: 400;
 	}
+	section.promote .list-group-item {
+		background: none;
+		border: none;
+	}
+	section.promote a {
+		width: 100%;
+	}
+	section.promote a.btn-transparent-md {
+		background-color: white;
+		color: #EE6F2E;
+	}
 </style>
 
 {{ if site.Data.homepage.promote.enable }}
@@ -249,21 +325,21 @@
 <section class="section promote">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-8">
+			<div class="col-md-6">
 					<h3>{{.title | markdownify}}</h3>
 				</div>
-			<div class="col-md-4">
-				<ul class="list-inline">
+			<div class="col-md-4 offset-md-2">
+				<ul class="list-group">
 					{{ if .button_solid.enable }}
 					{{ with .button_solid }}
-					<li class="list-inline-item">
+					<li class="list-group-item">
 						<a href="{{ .link | absURL }}" class="btn btn-main-md">{{.label}}</a>
 					</li>
 					{{ end }}
 					{{ end }}
 					{{ if .button_outline.enable }}
 					{{ with .button_outline }}
-					<li class="list-inline-item">
+					<li class="list-group-item">
 						<a href="{{ .link | absURL }}" class="btn btn-transparent-md">{{.label}}</a>
 					</li>
 					{{ end }}
@@ -278,20 +354,23 @@
 
 
 <!--==============================
-=            Final Text            =
+=           Final Text           =
 ===============================-->
 
+<style>
+
+</style>
 
 {{ if site.Data.homepage.finaltext.enable }}
 {{ with site.Data.homepage.finaltext }}
 <section class="section finaltext">
 	<div class="container">
 		
-		<h2>{{.titleSection | markdownify}}</h2>
+		<h2 style="font-weight: 400;">{{.titleSection | markdownify}}</h2>
 
-		<h3>{{.title1 | markdownify}}</h3>
+		<h3 style="color: #D86E39; font-weight: 500;">{{.title1 | markdownify}}</h3>
 		<p>{{ .content1 | markdownify}}</p>
-		<h3>{{.title2 | markdownify}}</h3>
+		<h3 style="color: #A6BF64; font-weight: 500;">{{.title2 | markdownify}}</h3>
 		<p>{{ .content2 | markdownify}}</p>
 	</div>
 </section>
