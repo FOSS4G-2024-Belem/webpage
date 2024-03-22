@@ -38,13 +38,13 @@
 <!--====  End of Call to Action Subscribe  ====-->
 
 
-<!--================================
+<!--================================background: url("images/footer-background.jpg");
 =            Google Map            =
 =================================-->
 
 <style>
 	section.map {
-		background: url("images/footer-background.jpg");
+		background: url("{{ site.Params.backgroundFooter | absURL}}");
 		background-size: cover;
 		padding-top: 150px;
 		clip-path: polygon(0 0, 100% 34%, 100% 100%, 0% 100%);
@@ -57,22 +57,26 @@
 	section.map .divMap {
 		padding: 0;
 	}
-	section.map .contactButton {
-		position: absolute; 
-		right: 192px;
-	}
-	@media (max-height: 991px) {
+
+	@media (max-width: 991px) {
 		section.map {
 			clip-path: polygon(0 0, 100% 22%, 100% 100%, 0% 100%);
 		}
 		section.map .divMap {
 			margin-bottom: -8px;
 		}
-		section.map .contactButton {
-		left: 30%;
-		top: 95%;
+		section.map .contactButton img {
+			left: 25%;
+    		top: 100%;
+		}
+
 	}
+	@media (min-width: 992px) {
+		section.map .contactButton img {
+			left: 63%;
+		}
 	}
+
 </style>
 
 {{ if site.Params.map.enable }}
@@ -159,6 +163,15 @@ End of Google Map  ====-->
 		display: flex;
 		align-items: flex-end;
 		justify-content: flex-end;
+	}
+	@media (max-width: 767px) {
+		.footer-logo {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.iconsContainer {
+			justify-content: center;
+		}
 	}
 </style>
 

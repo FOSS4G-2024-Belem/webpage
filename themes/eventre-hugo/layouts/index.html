@@ -86,71 +86,109 @@
 <!--==============================
 =            Register            =
 ===============================-->
+
+{{ if site.Data.homepage.register.enable }}
+{{ with site.Data.homepage.register }}
 <style>
 	section.registerGrid {
+		overflow-x: hidden;
 		width: 100%;
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr;
 		gap: 0;
-		
+
 	}
+
 	section.registerGrid a,
-	section.registerGrid h2 ,
-	section.registerGrid h3 ,
-	section.registerGrid p  {
+	section.registerGrid h2,
+	section.registerGrid h3,
+	section.registerGrid p {
 		color: white !important;
 	}
-	section.registerGrid > div {
+
+	section.registerGrid>div {
 		aspect-ratio: 1/1;
 	}
+
 	div.registerItemFeatured {
 		grid-row: 1/3;
 		background: url("images/register-img.png");
 		background-size: cover;
 	}
+
 	div.registerItem {
 		padding: 20px;
 		display: flex;
 		flex-direction: column;
-    	justify-content: flex-end;
+		justify-content: flex-end;
 	}
+
 	section.registerGrid div.registerItem:nth-child(2) {
 		background: url("images/workshops-background.png");
 	}
+
 	section.registerGrid div.registerItem:nth-child(3) {
 		background-color: black;
 	}
+
 	section.registerGrid div.registerItem:nth-child(4) {
 		background: url("images/program-background.png");
 	}
+
 	section.registerGrid div.registerItem:nth-child(5) {
 		background: url("images/social-events-img.png");
 		background-size: cover;
 	}
-	
+
+	section.registerGrid a.btn-main-md {
+		background-color: white !important;
+		color: #EE6F2E !important;
+		font-weight: 500;
+		margin-top: 20px;
+		border-radius: 4px;
+		width: 100%;
+		font-size: 24px;
+	}
+
+	section.registerGrid a > h3:hover {
+		transition: all .3s ease;
+		opacity: .7;
+	}
+
 	@media (max-width:938px) {
 		section.registerGrid {
 			grid-template-columns: 1fr;
 		}
-		section.registerGrid > div {
+
+		section.registerGrid>div {
 			aspect-ratio: 20/10;
 		}
-		section.registerGrid > div:first-child {
+
+		section.registerGrid>div:first-child {
 			aspect-ratio: 1/1;
 		}
+
+		section.registerGrid a.btn-main-md {
+			width: 90%;
+			padding: 20px;
+		}
 	}
+
 	@media (min-width:939px) and (max-width:1275px) {
 		section.registerGrid h2 {
 			font-size: 3.25rem
 		}
+
 		section.registerGrid h3 {
 			font-size: 2.25rem
 		}
 	}
+
 	@media (min-width:1276px) {
 		section.registerGrid h2 {
 			font-size: 4rem
 		}
+
 		section.registerGrid h3 {
 			font-size: 3.25rem
 		}
@@ -159,39 +197,60 @@
 
 <section class="registerGrid">
 	<div class="registerItemFeatured">
-		<div class="col-md-8" style="
-									background-color: #EE6F2E;
-									margin-top: 20px;
-									padding: 20px;
-									">
-			<h2>Register to the event</h2>
+		<div class="row">
+			<div class="col-md-8" style="
+										background-color: #EE6F2E;
+										margin-top: 20px;
+										padding: 20px;
+										">
+				<h2>Register to the event</h2>
+			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-4" style="text-align: right;">
+			<div class="col-md-4 d-none d-md-block" style="text-align: right; padding-right: 40px;">
 				<img src="images/flechas_blanco.png" style="transform: rotate(-90deg);" alt="">
 			</div>
-			<div class="col-md-4">
-				<button>Register Now</button>
+			<div class="col-md-4" style="padding: 0; text-align: center;">
+				<a href="{{ .link1 | absURL }}" class="btn btn-main-md">Register Now</a>
 			</div>
 		</div>
 	</div>
+
 	<div class="registerItem">
-		<h3>Workshops</h3>
-		<p>See all here</p>
+		<a href="{{ .link2 | absURL }}">
+			<h3>Workshops</h3>
+			<p>See all here</p>
+		</a>
 	</div>
+
+
 	<div class="registerItem">
 		<img src="images/flechas_blanco.png" style="height: 86px; width: 34px;" alt="">
-		<h3>Where to stay?</h3>
+		<a href="{{ .link3 | absURL }}">
+			<h3>Where to stay?</h3>
+		</a>
 	</div>
+
+
+
 	<div class="registerItem">
-		<h3>Program</h3>
-		<p>A wonderful opportunity for networking</p>
+		<a href="{{ .link4 | absURL }}">
+			<h3>Program</h3>
+			<p>A wonderful opportunity for networking</p>
+		</a>
 	</div>
+
+
 	<div class="registerItem">
-		<h3>Social Events</h3>
-		<p>Stay tuned with all the events here</p>
+		<a href="{{ .link5 | absURL }}">
+			<h3>Social Events</h3>
+			<p>Stay tuned with all the events here</p>
+		</a>
 	</div>
+
 </section>
+{{ end }}
+{{ end }}
 
 <!--==============================
 =           Latest news          =
@@ -203,27 +262,44 @@
 		background-position: 63% 73%;
 		background-repeat: no-repeat;
 	}
+
 	section.latest div.card {
 		margin-top: 30px;
 	}
+	section.latest .back1 {
+		background: url("images/cards/card1.png"); 
+
+	}
+	section.latest .back2 {
+		background: url("images/cards/card2.png"); 
+	}
+	section.latest .back3 {
+		background: url("images/cards/card3.png"); 
+	}
 	section.latest .cardImage {
-		background-color: gray;
 		height: 325px;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
 	}
 	section.latest .cardContent {
 		padding: 20px;
 	}
-	section.latest	.cardMiddle {
+
+	section.latest .cardMiddle {
 		margin-top: -30px !important;
 	}
+
 	@media (max-width:998px) {
 		section.latest {
 			background: none;
 		}
+
 		section.latest .col-md-4 {
 			min-width: 100%;
 		}
-		section.latest	.cardMiddle {
+
+		section.latest .cardMiddle {
 			margin-top: 30px !important;
 		}
 	}
@@ -235,7 +311,7 @@
 	<div class="container">
 		<div class="belem-background"></div>
 		<div class="row" style="padding-bottom: 0;">
-			<div class="col-sm-1 d-sm-none">
+			<div class="col-sm-1 d-none d-md-block">
 				<img src="images/FIND-OUT.png" style="transform: scale(85%); position: absolute; left: 0;" alt="">
 			</div>
 			<div class="headingLatest col-lg-5 col-md-10 offset-md-1">
@@ -247,11 +323,15 @@
 			<div class="col-md-4 offset-lg-7">
 				<div class="card">
 					<div class="card-block">
-						<div class="cardImage"></div>
+						<div class="cardImage back1"></div>
 						<div class="cardContent">
-							<h4 class="card-title">Card title</h4>
-							<p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-							<a href="#" class="card-link">link</a>
+							<h4 class="card-title">{{.card1Title | markdownify}}</h4>
+							<p class="card-text p-y-1">{{.card1Text | markdownify}}</p>
+							{{ if .card1Link.enable }}
+							{{ with .card1Link }}
+								<a href="{{ .link | absURL }}">{{.label}}</a>
+							{{ end }}
+							{{ end }}
 						</div>
 					</div>
 				</div>
@@ -260,11 +340,15 @@
 			<div class="col-md-4 offset-lg-3">
 				<div class="card cardMiddle">
 					<div class="card-block">
-						<div class="cardImage"></div>
+						<div class="cardImage back2"></div>
 						<div class="cardContent">
-							<h4 class="card-title">Card title</h4>
-							<p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-							<a href="#" class="card-link">link</a>
+							<h4 class="card-title">{{.card2Title | markdownify}}</h4>
+							<p class="card-text p-y-1">{{.card2Text | markdownify}}</p>
+							{{ if .card2Link.enable }}
+							{{ with .card2Link }}
+								<a href="{{ .link | absURL }}">{{.label}}</a>
+							{{ end }}
+							{{ end }}
 						</div>
 					</div>
 				</div>
@@ -273,11 +357,15 @@
 			<div class="col-md-4">
 				<div class="card">
 					<div class="card-block">
-						<div class="cardImage"></div>
+						<div class="cardImage back3"></div>
 						<div class="cardContent">
-							<h4 class="card-title">Card title</h4>
-							<p class="card-text p-y-1">Some quick example text to build on the card title .</p>
-							<a href="#" class="card-link">link</a>
+							<h4 class="card-title">{{.card3Title | markdownify}}</h4>
+							<p class="card-text p-y-1">{{.card3Text | markdownify}}</p>
+							{{ if .card3Link.enable }}
+							{{ with .card3Link }}
+								<a href="{{ .link | absURL }}">{{.label}}</a>
+							{{ end }}
+							{{ end }}
 						</div>
 					</div>
 				</div>
@@ -299,21 +387,26 @@
 		background-position: center right;
 		padding: 0;
 	}
+
 	section.promote .row {
 		padding: 80px 0;
 	}
+
 	section.promote h3 {
 		font-size: 30px;
 		color: white;
 		font-weight: 400;
 	}
+
 	section.promote .list-group-item {
 		background: none;
 		border: none;
 	}
+
 	section.promote a {
 		width: 100%;
 	}
+
 	section.promote a.btn-transparent-md {
 		background-color: white;
 		color: #EE6F2E;
@@ -326,8 +419,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
-					<h3>{{.title | markdownify}}</h3>
-				</div>
+				<h3>{{.title | markdownify}}</h3>
+			</div>
 			<div class="col-md-4 offset-md-2">
 				<ul class="list-group">
 					{{ if .button_solid.enable }}
@@ -365,13 +458,14 @@
 {{ with site.Data.homepage.finaltext }}
 <section class="section finaltext">
 	<div class="container">
-		
+
 		<h2 style="font-weight: 400;">{{.titleSection | markdownify}}</h2>
 
 		<h3 style="color: #D86E39; font-weight: 500;">{{.title1 | markdownify}}</h3>
 		<p>{{ .content1 | markdownify}}</p>
 		<h3 style="color: #A6BF64; font-weight: 500;">{{.title2 | markdownify}}</h3>
 		<p>{{ .content2 | markdownify}}</p>
+		
 	</div>
 </section>
 {{ end }}

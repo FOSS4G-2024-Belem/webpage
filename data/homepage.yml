@@ -19,7 +19,6 @@ banner:
 about:
   enable : true
   title : "About FOSS4G"
-  image : "images/proposta_logo_sticker.png"
   content : "Organized by OSGeo and with more than 15 years of experience, this international annual gathering of location enthusiasts is the largest global gathering for geospatial software. <br><br>
 FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation. Through seven days of workshops, presentations, discussions, and cooperation, FOSS4G participants create effective and relevant geospatial products, standards, and protocols."
   button_solid:
@@ -32,6 +31,15 @@ FOSS4G brings together developers, users, decision-makers and observers from a b
     link : "about/"
   video : "{{< youtube VTou906-Kj8 >}}"
 
+################# Register ###################
+register:
+  enable: true
+  link1: register/
+  link2: workshops/
+  link3: stay/
+  link4: program/
+  link5: events/
+
 
 ################# Latest ###################
 latest:
@@ -39,6 +47,30 @@ latest:
   title : "Latest news"
   content : "Organized by OSGeo and with more than 15 years of experience, this international annual gathering of location enthusiasts is the largest global gathering for geospatial software.<br><br>
 FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation. Through seven days of workshops, presentations, discussions, and cooperation, FOSS4G participants create effective and relevant geospatial products, standards, and protocols."
+
+  card1Title: "Título Card 1"
+  card1Text: "Texto Card 1"
+  card1Link: 
+    enable: true
+    link: "/"
+    label: Show More
+# Replace /static/images/card/card1.png - same name and file type. square proportion is better
+
+  card2Title: "Título Card 2"
+  card2Text: "Texto Card 2"
+  card2Link: 
+    enable: true
+    link: "/"
+    label: Show More
+# Replace /static/images/card/card2.png - same name and file type. square proportion is better
+
+  card3Title: "Título Card 3"
+  card3Text: "Texto Card 3"
+  card3Link: 
+    enable: true
+    link: "/"
+    label: Show More
+# Replace /static/images/card/card3.png - same name and file type. square proportion is better
 
 ################# Promote ###################
 promote:
@@ -54,14 +86,14 @@ promote:
     link : "about/"
 
 
-################# Speaker ###################
+################# Final texts ###################
 finaltext:
   enable: true
-  titleSection : "titulo seccion"
-  title1 : "titulo1"
-  content1 : "texto1"
-  title2 : "titulo1"
-  content2 : "texto1"
+  titleSection : "Título de Sección"
+  title1 : "Titulo 1"
+  content1 : "Texto y Párrafo 1"
+  title2 : "Título 2"
+  content2 : "Texto y Párrafo 2"
 
 
 ################# Speaker ###################
