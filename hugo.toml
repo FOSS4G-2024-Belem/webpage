@@ -285,6 +285,8 @@ author = "Themefisher"
 contact_form_action = "#" # contact form works with https://formspree.io
 # copyright
 copyright = "This is a licensed copy allixender@gmail.com for free use in Osgeo projects and events"
+# Background Pages Header
+backgroundPagesHeader = "images/page-background.jpg"
 # Background Footer
 backgroundFooter = "images/footer-background.jpg"
 

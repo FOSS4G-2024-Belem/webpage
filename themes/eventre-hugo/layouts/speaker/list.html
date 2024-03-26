@@ -1,14 +1,14 @@
 {{ define "main" }}
-
+<i class="fa fa-facebook">
 <section class="section speakers white">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 section-title">
-        {{.Content}}
+        		{{.Content}}
 			</div>
 		</div>
 		<div class="row">
-      {{ range .Data.Pages }}
+      		{{ range .Data.Pages }}
 			<div class="col-lg-3 col-md-4 col-sm-6">
 				<!-- Speaker 1 -->
 				<div class="speaker-item">
@@ -17,9 +17,9 @@
 						<div class="primary-overlay"></div>
 						<div class="socials">
 							<ul class="list-inline">
-                {{ range first 4 .Params.social }}
-                <li class="list-inline-item"><a href="{{.link | safeURL }}"><i class="fa {{.icon}}"></i></a></li>
-                {{ end }}
+								{{ range first 4 .Params.social }}
+									<li class="list-inline-item"><a href="{{.link | safeURL }}"><i class="fa {{.icon}}"></i></a></li>
+								{{ end }}
 							</ul>
 						</div>
 					</div>
@@ -28,8 +28,8 @@
 						<p>{{ .Params.Designation | markdownify }}</p>
 					</div>
 				</div>
-      </div>
-      {{ end }}
+      		</div>
+      	{{ end }}
 		</div>
 	</div>
 </section>
