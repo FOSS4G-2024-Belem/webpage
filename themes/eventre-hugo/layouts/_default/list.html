@@ -1,76 +1,46 @@
 {{ define "main" }}
 
-<!-- checking blog -->
-{{ if or (or (eq .Section "post") (eq .Section "blog")) (or (eq .Section "categories") (eq .Section "tags") )}}
+<section class="listing-pages1">
 
-<section class="news section">
-	<div class="container">
-		<div class="row mt-30">
-			<div class="col-lg-8 col-md-10 mx-auto">
-				<div class="block">
-					<div class="row">
-            {{ $paginator := .Paginate (where site.RegularPages "Type" "in" site.Params.mainSections) }}
-            {{ range $paginator.Pages }}
-						<div class="col-md-6 col-10 m-auto">
-							<div class="blog-post">
-								<div class="post-thumb">
-									<a href="{{ .Permalink }}">
-										<img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="img-fluid">
-									</a>
-								</div>
-								<div class="post-content">
-									<div class="date">
-										<h4>{{ .PublishDate.Format "02" }}<span>{{ .PublishDate.Format "Jan" }}</span></h4>
-									</div>
-									<div class="post-title">
-										<h2><a href="{{ .Permalink }}">{{ .Title | markdownify }}</a></h2>
-									</div>
-									<div class="post-meta">
-										<ul class="list-inline">
-											<li class="list-inline-item">
-												<i class="fa fa-user"></i>
-												<a href="{{ .Params.author_id | absURL }}">{{ .Params.author }}</a>
-											</li>
-											<li class="list-inline-item">
-                        <i class="fa fa-tag"></i>
-                        {{ range .Params.tags }}
-                        <a href="{{ `tags/` | relLangURL }}{{ . | urlize | lower }}">{{. | humanize}}</a>
-                        {{ end }}
-											</li>
-										</ul>
-									</div>
-								</div>
-							</div>
-            </div>
-            {{ end }}
-            <div class="col-12">
-              {{ template "_internal/pagination.html" . }}
-            </div>
-					</div>
-				</div>
-			</div>
-			<div class="col-lg-4 col-md-10 mx-auto">
-				{{partial "blog-sidebar.html" . }}
-			</div>
-		</div>
-	</div>
-</section>
+    <div class="container">
 
-<!-- regular page -->
-{{ else }}
-{{ partial "page-header.html" . }}
-<section class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 mx-auto">
-        <div class="content">
-          {{.Content}}
-        </div>
-      </div>
+        {{ if .Params.blogDescription.enable }}
+		{{ with .Params.blogDescription }}
+            <p>{{ .descriptionText | markdownify }}</p>
+        {{end}}
+        {{end}}
+
+        {{ range .Pages}}
+
+            <div style="
+                    margin: 40px 0 80px 0;
+                    border-image: linear-gradient(to right, #D86E39, #ffffff) 100;
+                    border-width: 2px;
+                    border-style: solid;
+                    border-top: 0;
+                    border-left: 0;
+                    border-right: 0;
+                    padding-bottom: 20px;
+                    ">
+                <h2 style="font-weight: 400; margin-bottom: 20px;">
+                    {{ if .Params.titleLink.enable }}
+                        <a href="{{ .Permalink }}" style="font-size: 40px;">{{ .Title | markdownify }}</a>
+                    {{else}}
+                        {{ .Title | markdownify }}
+                    {{end}}
+                </h2>
+
+                <h3 style="color: #D86E39; font-weight: 500; font-size: 28px;">{{ .Params.subtitle1 | markdownify }}</h3>
+                <p>{{ .Params.text1 | markdownify }}</p>
+                
+                <h3 style="color: #A6BF64; font-weight: 500; font-size: 28px;">{{ .Params.subtitle2 | markdownify }}</h3>
+                <p>{{ .Params.text2 | markdownify }}</p>
+            </div>
+
+        {{end}}
+
     </div>
-  </div>
-</section>
-{{ end }}
-<!-- /regular page -->
 
-{{ end }}
+</section>
+
+{{end}}

@@ -1,4 +1,4 @@
-# 2024 FOSS4G Belém event web page
+# 2024 FOSS4G Belém event web page 
 
 The web site is made with Hugo. The template is copyrighted and was purchased from [Gethugothemes](https://gethugothemes.com/).
 

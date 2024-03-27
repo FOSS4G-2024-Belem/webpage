@@ -19,16 +19,81 @@ banner:
 about:
   enable : true
   title : "About FOSS4G"
-  image : "images/proposta_logo_sticker.png"
-  content : "FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation.<br> <br> {{< youtube VTou906-Kj8 >}}"
+  content : "Organized by OSGeo and with more than 15 years of experience, this international annual gathering of location enthusiasts is the largest global gathering for geospatial software. <br><br>
+FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation. Through seven days of workshops, presentations, discussions, and cooperation, FOSS4G participants create effective and relevant geospatial products, standards, and protocols."
   button_solid:
-    enable : false
+    enable : true
     label : "Buy ticket"
     link : "pricing/"
   button_outline:
     enable : false
     label : "Read more"
     link : "about/"
+  video : "{{< youtube VTou906-Kj8 >}}"
+
+################# Register ###################
+register:
+  enable: true
+  link1: register/
+  link2: workshops/
+  link3: stay/
+  link4: program/
+  link5: events/
+
+
+################# Latest ###################
+latest:
+  enable: true
+  title : "Latest news"
+  content : "Organized by OSGeo and with more than 15 years of experience, this international annual gathering of location enthusiasts is the largest global gathering for geospatial software.<br><br>
+FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation. Through seven days of workshops, presentations, discussions, and cooperation, FOSS4G participants create effective and relevant geospatial products, standards, and protocols."
+
+  card1Title: "Título Card 1"
+  card1Text: "Texto Card 1"
+  card1Link: 
+    enable: true
+    link: "/"
+    label: "Show More"
+# Replace /static/images/card/card1.png - same name and file type. square proportion is better
+
+  card2Title: "Título Card 2"
+  card2Text: "Texto Card 2"
+  card2Link: 
+    enable: true
+    link: "/"
+    label: "Show More"
+# Replace /static/images/card/card2.png - same name and file type. square proportion is better
+
+  card3Title: "Título Card 3"
+  card3Text: "Texto Card 3"
+  card3Link: 
+    enable: true
+    link: "/"
+    label: "Show More"
+# Replace /static/images/card/card3.png - same name and file type. square proportion is better
+
+################# Promote ###################
+promote:
+  enable: true
+  title : "A little text to become a partner or promote something specific about the event."
+  button_solid:
+    enable : true
+    label : "Join Today"
+    link : "pricing/"
+  button_outline:
+    enable : true
+    label : "Contact Us"
+    link : "about/"
+
+
+################# Final texts ###################
+finaltext:
+  enable: true
+  titleSection : "Título de Sección"
+  title1 : "Titulo 1"
+  content1 : "Texto y Párrafo 1"
+  title2 : "Título 2"
+  content2 : "Texto y Párrafo 2"
 
 
 ################# Speaker ###################
@@ -245,7 +310,7 @@ pricing:
     - "Easy Access"
 
 
-############### Call to action ############
+############### Call to action ############ 
 call_to_action:
   enable : false
   title : "Get Ticket _Now!_"
@@ -259,7 +324,7 @@ call_to_action:
 
 ############### Sponsors ##################
 sponsors:
-  enable : true
+  enable : false
   title : "Our partners, supporters, and sponsors"
   content : "Sponsors are the pillar that drives the FOSS4G conference. Join us to be forcibly behind geospatial innovation and stand out as an essential partner in this technological journey. Your support is key to making this path possible."
   button:
