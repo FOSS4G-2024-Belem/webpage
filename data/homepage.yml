@@ -310,7 +310,7 @@ pricing:
     - "Easy Access"
 
 
-############### Call to action ############
+############### Call to action ############ 
 call_to_action:
   enable : false
   title : "Get Ticket _Now!_"
