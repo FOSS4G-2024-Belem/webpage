@@ -53,7 +53,7 @@ FOSS4G brings together developers, users, decision-makers and observers from a b
   card1Link: 
     enable: true
     link: "/"
-    label: Show More
+    label: "Show More"
 # Replace /static/images/card/card1.png - same name and file type. square proportion is better
 
   card2Title: "Título Card 2"
@@ -61,7 +61,7 @@ FOSS4G brings together developers, users, decision-makers and observers from a b
   card2Link: 
     enable: true
     link: "/"
-    label: Show More
+    label: "Show More"
 # Replace /static/images/card/card2.png - same name and file type. square proportion is better
 
   card3Title: "Título Card 3"
@@ -69,7 +69,7 @@ FOSS4G brings together developers, users, decision-makers and observers from a b
   card3Link: 
     enable: true
     link: "/"
-    label: Show More
+    label: "Show More"
 # Replace /static/images/card/card3.png - same name and file type. square proportion is better
 
 ################# Promote ###################
