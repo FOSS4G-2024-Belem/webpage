@@ -2171,11 +2171,9 @@ select.form-control:not([size]):not([multiple]) {
 
 .single-speaker .block {
   padding-bottom: 70px;
-  border-bottom: 1px solid #e5e5e5;
 }
 .single-speaker .block .image-block {
   background: #fff;
-  border: 1px solid #e5e5e5;
   padding: 6px;
 }
 .single-speaker .block .image-block img {
@@ -2214,7 +2212,6 @@ select.form-control:not([size]):not([multiple]) {
   height: 40px;
   width: 40px;
   background: #fff;
-  border: 1px solid #e5e5e5;
   text-align: center;
 }
 .single-speaker .block .content-block .social-profiles ul.social-list li a i {
@@ -2222,7 +2219,6 @@ select.form-control:not([size]):not([multiple]) {
 }
 .single-speaker .block .content-block .social-profiles ul.social-list li a:hover {
   background: #ff6600;
-  border: 1px solid #ff6600;
   color: #fff;
 }
 .single-speaker .block-2 {
