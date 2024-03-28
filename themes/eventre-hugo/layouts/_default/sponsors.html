@@ -24,6 +24,20 @@
             display: none
         }
     }
+    .logo-grid {
+    display: grid;
+    grid-gap: 10px; 
+    }
+    .logo-item {
+        padding: 10px;
+        text-align: center;
+    }
+    .fill {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    .fit {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));        
+    }
 </style>
 
 <div class="sponsors-img">
@@ -65,7 +79,6 @@
         background-position: center;
         z-index: -2;
         ">
-
         <div class="first-sponsors" style="
                                         max-width: 600px; 
                                         width: 100%;
@@ -77,92 +90,123 @@
             <div style="background-color: #ef6c38; text-align: center; font-weight: 500; font-size: 20px;">
                 <h4 style="font-size: 20px; color: white; padding: 8px;">Organizers</h4>
             </div>
-
-            <div class="organizers-content" style="text-align: center; padding: 20px; position: relative;">
-                <img src="../images/organizers.png" alt="" class="img-fluid">
-
+            <div class="logo-grid fit">
+                {{range .Params.organizer }}
+                    <div class="logo-item">
+                        <a href="{{ .link | safeURL }}"><img class="img-fluid" src="{{ .logo | absURL }}" alt="{{.name}}"></a>
+                    </div>
+                {{end}}
+            </div>
+            <div style="text-align: center; padding: 20px; position: relative;">
                 <div class="row" style="text-align: left;">
                     <div class="col-md-6">
-                        <h4 style="color: #A6BF64; font-size: 20px"> >>> Diamond Sponsor</h4>
-                        <img class="img-fluid" src="../images/sponsors/rearth.png" alt="">
+                        {{range .Params.diamond }}
+                            <h4 style="color: #A6BF64; font-size: 20px"> >>> Diamond Sponsor</h4>
+                            <a href="{{ .link | safeURL }}"><img class="img-fluid" src="{{ .logo | absURL }}" alt="{{.name}}"></a>
+                            <br>
+                        {{end}}
                     </div>
                     <div class="col-md-6">
-                        <h4 style="color: #EE6F2E; font-size: 20px"> >>> Platinum Sponsor</h4>
-                        <img class="img-fluid" src="../images/sponsors/procredit-itp.png" alt="">
+                        {{range .Params.platinum }}
+                            <h4 style="color: #EE6F2E; font-size: 20px"> >>> Platinum Sponsor</h4>
+                            <a href="{{ .link | safeURL }}"><img class="img-fluid" src="{{ .logo | absURL }}" alt="{{.name}}"></a>
+                            <br>
+                        {{end}}
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
-
     <div class="container" style="margin-top: 100px;">
         <div class="gold-sponsors" style="margin-bottom: 50px;">
             <div class="row">
-                <div class="col-md-1" style="margin-top: -20px;">
+                <div class="col-md-1 d-none d-md-block" style="margin-top: -20px;">
                     <img src="../images/arrow-brown.png" style="transform: rotate(-90deg);" alt="">
                 </div>
                 <div class="col-md-11">
                     <h3>Gold Sponsors</h3>
                 </div>
-                <div class="col-md-1" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="col-md-1 d-none d-md-block" style="display: flex; flex-direction: column; justify-content: center;">
                     <img style="max-width: 27px; max-height: 96px;" src="../images/gold.png" style="" alt="">
                 </div>
                 <div class="col-md-11">
-                    <img src="../images/sponsors/sponsors-gold-all.png" style="" alt="">
+                    <div class="logo-grid fill">
+                        {{range .Params.gold }}
+                            <div class="logo-item">
+                                <a href="{{ .link | safeURL }}"><img class="img-fluid" src="{{ .logo | absURL }}" alt="{{.name}}"></a>
+                            </div>
+                        {{end}}
+                    </div>
                 </div>
             </div>
         </div>
         <div class="silver-sponsors" style="margin-bottom: 50px;">
             <div class="row">
-                <div class="col-md-1" style="margin-top: -20px;">
+                <div class="col-md-1 d-none d-md-block" style="margin-top: -20px;">
                     <img src="../images/arrow-brown.png" style="transform: rotate(-90deg);" alt="">
                 </div>
                 <div class="col-md-11">
                     <h3>Silver Sponsors</h3>
                 </div>
-                <div class="col-md-1" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="col-md-1 d-none d-md-block" style="display: flex; flex-direction: column; justify-content: center;">
                     <img style="max-width: 27px; max-height: 118px;" src="../images/silver.png" style="" alt="">
                 </div>
                 <div class="col-md-11">
-                    <img src="../images/sponsors/sponsors-gold-all.png" style="" alt="">
+                    <div class="logo-grid fill">
+                        {{range .Params.silver }}
+                            <div class="logo-item">
+                                <a href="{{ .link | safeURL }}"><img class="img-fluid" src="{{ .logo | absURL }}" alt="{{.name}}"></a>
+                            </div>
+                        {{end}}
+                    </div>
                 </div>
             </div>
         </div>
         <div class="bronze-sponsors" style="margin-bottom: 50px;">
             <div class="row">
-                <div class="col-md-1" style="margin-top: -20px;">
+                <div class="col-md-1 d-none d-md-block" style="margin-top: -20px;">
                     <img src="../images/arrow-brown.png" style="transform: rotate(-90deg);" alt="">
                 </div>
                 <div class="col-md-11">
                     <h3>Bronze Sponsors</h3>
                 </div>
-                <div class="col-md-1" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="col-md-1 d-none d-md-block" style="display: flex; flex-direction: column; justify-content: center;">
                     <img style="max-width: 27px; max-height: 141px;" src="../images/bronze.png" style="" alt="">
                 </div>
                 <div class="col-md-11">
-                    <img src="../images/sponsors/sponsors-gold-all.png" style="" alt="">
+                    <div class="logo-grid fill">
+                        {{range .Params.bronze }}
+                            <div class="logo-item">
+                                <a href="{{ .link | safeURL }}"><img class="img-fluid" src="{{ .logo | absURL }}" alt="{{.name}}"></a>
+                            </div>
+                        {{end}}
+                    </div>
                 </div>
             </div>
         </div>
         <div class="partners" style="margin-bottom: 50px;">
             <div class="row">
-                <div class="col-md-1" style="margin-top: -20px;">
+                <div class="col-md-1 d-none d-md-block" style="margin-top: -20px;">
                     <img src="../images/arrow-green.png" style="transform: rotate(-90deg);">
                 </div>
                 <div class="col-md-11">
                     <h3>Partners</h3>
                 </div>
-                <div class="col-md-1" style="display: flex; flex-direction: column; justify-content: center;">
+                <div class="col-md-1 d-none d-md-block" style="display: flex; flex-direction: column; justify-content: center;">
                     <img style="max-width: 27px; max-height: 179px;" src="../images/partners.png" style="" alt="">
                 </div>
                 <div class="col-md-11">
-                    <img src="../images/sponsors/sponsors-gold-all.png" style="" alt="">
+                    <div class="logo-grid fill">
+                        {{range .Params.partners }}
+                            <div class="logo-item">
+                                <a href="{{ .link | safeURL }}"><img class="img-fluid" src="{{ .logo | absURL }}" alt="{{.name}}"></a>
+                            </div>
+                        {{end}}
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
 </section>
 
 {{end}}
