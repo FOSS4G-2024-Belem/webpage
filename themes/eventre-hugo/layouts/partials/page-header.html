@@ -1,4 +1,4 @@
-<section class="page-title bg-title overlay-dark" style="background-image: url('{{ .Params.Page_header_bg | absURL}}');">
+<!-- <section class="page-title bg-title overlay-dark" style="background-image: url('{{ .Params.Page_header_bg | absURL}}');">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 text-center">
@@ -9,6 +9,38 @@
 				  <li class="breadcrumb-item"><a href="{{ site.BaseURL }}">Home</a></li>
 				  <li class="breadcrumb-item active">{{.Title | markdownify}}</li>
 				</ol>
+			</div>
+		</div>
+	</div>
+</section> -->
+<style>
+	.imageHeader {
+		height: 200px;	
+		margin-top: 86px;
+		background: url('{{ site.Params.backgroundPagesHeader | absURL}}');
+		background-size: cover;
+		background-repeat: no-repeat;
+		clip-path: polygon(0 0, 100% 0, 100% 100%, 0 37%);
+	}
+	@media (max-width: 767px) {
+		.imageHeader {
+			margin-top: 0;
+		}
+	}
+</style>
+<section class="pageHeader">
+	<div class="imageHeader">
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div class="title">
+					<h3 style="font-size: 52px;">{{.Title | markdownify}}</h3>
+				</div>
+				<!-- <ol class="breadcrumb justify-content-center p-0 m-0">
+				  <li class="breadcrumb-item"><a href="{{ site.BaseURL }}">Home</a></li>
+				  <li class="breadcrumb-item active">{{.Title | markdownify}}</li>
+				</ol> -->
 			</div>
 		</div>
 	</div>

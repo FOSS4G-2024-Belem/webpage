@@ -1,35 +1,61 @@
 {{ define "main" }}
-
+<style>
+	.speakers.white .speaker-item {
+		border: none;
+	}
+	.shadow, .testimonial .testimonial-item .comment:hover, 
+	.news-hr .news-post-hr:hover, 
+	ul.pagination .active a, 
+	ul.pagination li a:hover, 
+	ul.pagination li a:focus, 
+	.sponsors .block .image-block:hover, 
+	.schedule.two .schedule-contents, 
+	.speakers.white .speaker-item:hover {
+		box-shadow: none; 
+	}
+	.speakers.white .image {
+  		border: double 6px transparent;
+  		border-radius: 50%;
+ 	 	background-image: linear-gradient(white, white), radial-gradient(circle at top left, #BDD18D, #49B09D);
+  		background-origin: border-box;
+  		background-clip: content-box, border-box;
+	}
+	.content a {
+		color:#49B09D !important;
+	}
+	.content a:hover {
+		color:#267c6c !important;
+	}
+	.image a img:hover {
+		transform: scale(110%);
+		transition: all .5s ease;
+	}
+</style>
 <section class="section speakers white">
 	<div class="container">
 		<div class="row">
 			<div class="col-12 section-title">
-        {{.Content}}
+        		{{.Content}}
 			</div>
 		</div>
 		<div class="row">
-      {{ range .Data.Pages }}
+      		{{ range .Data.Pages }}
 			<div class="col-lg-3 col-md-4 col-sm-6">
 				<!-- Speaker 1 -->
 				<div class="speaker-item">
 					<div class="image">
-						<img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="img-fluid">
-						<div class="primary-overlay"></div>
-						<div class="socials">
-							<ul class="list-inline">
-                {{ range first 4 .Params.social }}
-                <li class="list-inline-item"><a href="{{.link | safeURL }}"><i class="fa {{.icon}}"></i></a></li>
-                {{ end }}
-							</ul>
-						</div>
+						<a href="{{ .Permalink }}"><img src="{{ .Params.image | absURL }}" alt="{{ .Title }}" class="img-fluid"></a>
 					</div>
 					<div class="content text-center">
-						<h5><a href="{{ .Permalink }}">{{.Title }}</a></h5>
-						<p>{{ .Params.Designation | markdownify }}</p>
+						<h5><a style="font-weight: 500;" href="{{ .Permalink }}">{{.Title }}</a></h5>
+						<!-- <p style="padding-bottom: 0;">{{ .Params.Designation | markdownify }}</p> -->
+						{{ range first 4 .Params.social }}
+							<li class="list-inline-item"><a href="{{.link | safeURL }}"><i class="fa-brands {{.icon}}"></i></a></li>
+						{{ end }}
 					</div>
 				</div>
-      </div>
-      {{ end }}
+      		</div>
+      	{{ end }}
 		</div>
 	</div>
 </section>

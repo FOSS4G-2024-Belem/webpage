@@ -15,7 +15,8 @@
 			</div>
 			<div class="col-md-6 ml-auto align-self-center">
 				<!-- Subscription form -->
-				<form class="row" action="{{ .mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form" target="_blank">
+				<form class="row" action="{{ .mailchimp_form_action }}" method="post" name="mc-embedded-subscribe-form"
+					target="_blank">
 					<div class="col-lg-8 col-md-12">
 						<input type="email" class="form-control main white mb-lg-0" placeholder="Email">
 					</div>
@@ -36,28 +37,78 @@
 {{ end }}
 <!--====  End of Call to Action Subscribe  ====-->
 
-<!--================================
+
+<!--================================background: url("images/footer-background.jpg");
 =            Google Map            =
 =================================-->
+
+<style>
+	section.map {
+		background: url("{{ site.Params.backgroundFooter | absURL}}");
+		background-size: cover;
+		padding-top: 150px;
+		clip-path: polygon(0 0, 100% 34%, 100% 100%, 0% 100%);
+	}
+	section.map .footerInfo {
+		background-color: white; 
+		max-height: 300px;
+		padding: 20px;
+	}
+	section.map .divMap {
+		padding: 0;
+	}
+
+	@media (max-width: 991px) {
+		section.map {
+			clip-path: polygon(0 0, 100% 22%, 100% 100%, 0% 100%);
+		}
+		section.map .divMap {
+			margin-bottom: -8px;
+		}
+		section.map .contactButton img {
+			left: 25%;
+    		top: 100%;
+		}
+
+	}
+	@media (min-width: 992px) {
+		section.map .contactButton img {
+			left: 63%;
+		}
+	}
+
+</style>
+
 {{ if site.Params.map.enable }}
 {{ with site.Params.map }}
 <section class="map">
-	<!-- Google Map -->
-	<iframe width="100%" height="450" src="https://www.openstreetmap.org/export/embed.html?bbox=-48.4579001%2C-1.42168168&amp;layer=mapnik&amp;marker=-1.42168%2C-48.45677" style="border: 1px solid black; margin-bottom: -10px;"></iframe><br/><small><a href="https://www.openstreetmap.org/?mlat=-1.42168&amp;mlon=-48.45677#map=19/-1.42168/-48.45677"><!-- View Larger Map --></a></small>
-
-	<!-- <div id="map_canvas" data-latitude="{{ .map_latitude }}"
-  data-longitude="{{ .map_longitude }}" data-marker="{{ .map_marker | absURL }}"
-  data-marker-name="{{ site.Title }}">
-</div> -->
-	<div class="address-block">
-		<h4>{{.name | markdownify }}</h4>
-		<ul class="address-list p-0 m-0">
-			<li><i class="fa fa-home"></i><span><a href="https://osm.org/go/N~PVzLbnY--?relation=15986844">{{ .location | markdownify }}</a></span></li>
-			<li><i class="fa fa-envelope"></i><span>{{ .email | markdownify}}</span></li>
-		</ul>
-
-		<!-- https://osm.org/go/N~PVzLbnY--?relation=15986844 -->
-		<a href="https://geohack.toolforge.org/geohack.php?pagename=Hangar_(centro_de_conven%C3%A7%C3%B5es)&params=1_25_18_S_48_27_22_W" target="_blank" class="btn btn-white-md">Get Directions</a>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 divMap">
+				<iframe width="100%" height="300"
+					src="https://www.openstreetmap.org/export/embed.html?bbox=-48.457001%2C-1.42168168&amp;layer=mapnik&amp;marker=-1.42168%2C-48.45677">
+				</iframe>
+				<br />
+				<small>
+					<a href="https://www.openstreetmap.org/?mlat=-1.42168&amp;mlon=-48.45677#map=19/-1.42168/-48.45677"></a>
+				</small>
+			</div>
+			<div class="col-lg-6 footerInfo">
+				<div style="position: relative;">
+					<i class="fa fa-map-marker" style="font-size: 30px;"></i>
+					<h4>{{.name | markdownify }}</h4>
+					<ul class="list-unstyled">
+						<li>
+							<a href="https://osm.org/go/N~PVzLbnY--?relation=15986844" style="text-decoration: underline;">{{ .location | markdownify}}</a></span>
+						</li>
+						<li>
+							<span>{{ .email | markdownify}}</span>
+						</li>
+					</ul>
+					<a class="contactButton" href=""><img src="images/contact-button.png" style="transform: scale(75%); position: absolute;" alt=""></a>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 {{ end }}
@@ -68,44 +119,61 @@
 =            Footer            =
 =============================-->
 
+<style>
+	.social-links-footer a {
+		display: flex;
+		width: 40px;
+		height: 40px;
+		background-color: white;
+		border-radius: 50%;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.social-links-footer i {
+		color: #ff6600;
+		font-size: 1.3em;
+	}
+
+	.iconsContainer {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+	}
+	@media (max-width: 767px) {
+		.footer-logo {
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.iconsContainer {
+			justify-content: center;
+		}
+	}
+</style>
+
 <footer class="footer-main">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="block text-center">
-					<div class="footer-logo">
-						<a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
-							{{ if site.Params.logo }}
-							<img class="img-fluid" width="{{site.Params.logo_width}}" src="{{ site.Params.logo_footer | absURL}}"
-								alt="{{ site.Title }}">
-							{{ else }}
-							{{site.Title}}
-							{{ end }}
-						</a>
-					</div>
-					<ul class="social-links-footer list-inline">
-						{{ range site.Params.social}}
-						<li class="list-inline-item">
-							<a href="{{ .link | safeURL }}"><i class="fa-brands {{.icon}}"></i></a>
-						</li>
-						{{ end }}
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</footer>
-<!-- Subfooter -->
-<footer class="subfooter">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-6 align-self-center">
-				<div class="copyright-text">
-					<p>{{site.Params.copyright | markdownify }}</p>
-				</div>
-			</div>
+		<div class="row" style="padding-bottom: 0;">
 			<div class="col-md-6">
-				<a href="#" class="to-top"><i class="fa fa-angle-up"></i></a>
+				<div class="footer-logo">
+					<a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+						{{ if site.Params.logo }}
+						<img class="img-fluid" width="{{site.Params.logo_width}}"
+							src="{{ site.Params.logo_footer | absURL}}" alt="{{ site.Title }}">
+						{{ else }}
+						{{site.Title}}
+						{{ end }}
+					</a>
+				</div>
+			</div>
+			<div class="col-md-6 iconsContainer">
+				<ul class="social-links-footer list-inline">
+					{{ range site.Params.social}}
+					<li class="list-inline-item">
+						<a href="{{ .link | safeURL }}"><i class="fa-brands {{.icon}}"></i></a>
+					</li>
+					{{ end }}
+				</ul>
 			</div>
 		</div>
 	</div>
@@ -142,12 +210,12 @@
 			cookieBox.classList.remove('cookie-box-hide');
 			cookieButton.onclick = function () {
 				Cookies.set('cookie-box', true, {
-					expires: {{site.Params.cookies.expire_days}}
-				});
-				cookieBox.classList.add('cookie-box-hide');
-			};
+					expires: {{ site.Params.cookies.expire_days }}
+		});
+		cookieBox.classList.add('cookie-box-hide');
+	};
 		}
-	})(jQuery);
+	}) (jQuery);
 </script>
 
 <!-- cookie style -->

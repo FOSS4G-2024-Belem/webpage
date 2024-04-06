@@ -14,322 +14,83 @@ banner:
     label : "get ticket now"
     link : "pricing/"
 
-
 ################# About ###################
 about:
   enable : true
   title : "About FOSS4G"
-  image : "images/proposta_logo_sticker.png"
-  content : "FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation.<br> <br> {{< youtube VTou906-Kj8 >}}"
+  content : "Organized by OSGeo and with more than 15 years of experience, this international annual gathering of location enthusiasts is the largest global gathering for geospatial software. <br><br>
+FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation. Through seven days of workshops, presentations, discussions, and cooperation, FOSS4G participants create effective and relevant geospatial products, standards, and protocols."
   button_solid:
-    enable : false
+    enable : true
     label : "Buy ticket"
     link : "pricing/"
   button_outline:
     enable : false
     label : "Read more"
     link : "about/"
+  video : "{{< youtube VTou906-Kj8 >}}"
 
+################# Register ###################
+register:
+  enable: true
+  link1: register/
+  link2: workshops/
+  link3: stay/
+  link4: program/
+  link5: events/
 
-################# Speaker ###################
-speakers:
-  enable : false
-  title : "Who _Speaking?_"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore"
-  # speaker items are coming from "content/speakers" folder
+################# Latest ###################
+latest:
+  enable: true
+  title : "Latest news"
+  content : "Organized by OSGeo and with more than 15 years of experience, this international annual gathering of location enthusiasts is the largest global gathering for geospatial software.<br><br>
+FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation. Through seven days of workshops, presentations, discussions, and cooperation, FOSS4G participants create effective and relevant geospatial products, standards, and protocols."
 
-###################### Tab ####################
-tab:
-  enable : false
-  title : "Event Schedule"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do eiusm tempor incididunt ut labore"
-  tablist:
-  # tab item
-  - name : "Day-01"
-    date : "20 November 2017"
-    tablist_items:
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-one.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
+# Card 1
+  card1Title: "Título Card 1"
+  card1Text: "Texto Card 1"
+  card1Link: 
+    enable: true
+    link: "/"
+    label: "Show More"
+  card1Image: "images/cards/card1.png"
 
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-two.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
+# Card 2
+  card2Title: "Título Card 2"
+  card2Text: "Texto Card 2"
+  card2Link: 
+    enable: true
+    link: "/"
+    label: "Show More"
+  card2Image: "images/cards/card1.png"
 
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-three.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
+# Card 3
+  card3Title: "Título Card 3"
+  card3Text: "Texto Card 3"
+  card3Link: 
+    enable: true
+    link: "/"
+    label: "Show More"
+  card3Image: "images/cards/card1.png"
 
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-four.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-five.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-six.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-
-  # tab item
-  - name : "Day-02"
-    date : "23 November 2017"
-    tablist_items:
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-one.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-two.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-three.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-four.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-five.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-six.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-
-  # tab item
-  - name : "Day-03"
-    date : "25 November 2017"
-    tablist_items:
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-one.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-two.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-three.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-four.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-five.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-    # speaker
-    - speaker : "Samanta Doe"
-      speaker_image : "images/speakers/speaker-thumb-six.jpg"
-      subject : "Introduction to Wp"
-      venue : "Auditorium A"
-      time : "9.00 AM"
-
-
-############ Registration ####################
-registration:
-  enable : false
-  title : "Register to _Eventre_"
-  content : "Lorem ipsum dolor sit amet, consectetur adipisicing elit"
-  form_action : "#" # works with formspree.io
-
-  funfacts:
-  - name : "8 Speakers"
-    icon : "fa-microphone"
-
-  - name : "500 + Seats"
-    icon : "fa-flag"
-
-  - name : "300 tickets"
-    icon : "fa-ticket"
-
-  - name : "3 days event"
-    icon : "fa-calendar"
-
-
-
-
-############ Pricing ####################
-pricing:
-  enable : false
-  title : "Get _Ticket_"
-  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor incididunt ut labore"
-  pricing_table:
-  - name : "Starter"
-    price : "39.00"
-    price_per : "Person"
-    button_link : "pricing/"
-    features:
-    - "1 Comfortable Seats"
-    - "Free Lunch and Coffee"
-    - "Certificate"
-    - "Easy Access"
-
-  - name : "Standard"
-    price : "49.00"
-    price_per : "Person"
-    button_link : "pricing/"
-    features:
-    - "1 Comfortable Seats"
-    - "Free Lunch and Coffee"
-    - "Certificate"
-    - "Easy Access"
-
-  - name : "Platinum"
-    price : "99.00"
-    price_per : "Person"
-    button_link : "pricing/"
-    features:
-    - "1 Comfortable Seats"
-    - "Free Lunch and Coffee"
-    - "Certificate"
-    - "Easy Access"
-
-
-############### Call to action ############
-call_to_action:
-  enable : false
-  title : "Get Ticket _Now!_"
-  image : "images/speakers/speaker-ticket.png"
-  content : "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmtempor incidi"
-  button:
+################# Promote ###################
+promote:
+  enable: true
+  title : "A little text to become a partner or promote something specific about the event."
+  button_solid:
     enable : true
-    label : "Buy ticket"
+    label : "Join Today"
     link : "pricing/"
-
-
-############### Sponsors ##################
-sponsors:
-  enable : true
-  title : "Our partners, supporters, and sponsors"
-  content : "Sponsors are the pillar that drives the FOSS4G conference. Join us to be forcibly behind geospatial innovation and stand out as an essential partner in this technological journey. Your support is key to making this path possible."
-  button:
-    enable : false
-    label : "Become a sponsor"
-    link : "#"
-  sponsor_group:
-
-  - name : "Powered by"
-    sponsor_item:
-    - name : "OSGeo"
-      logo : "images/sponsors/OSGeo_logo.png"
-      link : "https://www.osgeo.org/"
-    - name : "Geolibres"
-      logo : "images/geolibres.png"
-      link : "https://geolibres.org.ar/"
-    - name : "OSGeo Local Chapter Brasi"
-      logo : "images/OSGeoBrasil.png"
-      link : "https://wiki.osgeo.org/wiki/Brasil"
-
-#  - name : "Organizing partners"
-#    sponsor_item:
-#    - name : "University of T-artu, Landscape Geoinformatics Lab"
-#      logo : "images/sponsors/landscape_geo_logo.png"
-#      link : "https://landscape-geoinformatics.ut.ee/"
-#    - name : "Estonian Geoinformatics Society"
-#      logo : "images/sponsors/estgis-logo.png"
-#      link : "https://estgis.ee/en/"
-#    - name : "University of T-artu"
-#      logo : "images/sponsors/ut-logo.png"
-#      link : "#"
-#  - name : "Platinum Sponsors"
-#    sponsor_item:
-#    - name : "sponsor"
-#      logo : "images/sponsors/pt-spon-two.png"
-#      link : "#"
-#
-#    - name : "sponsor"
-#      logo : "images/sponsors/pt-spon-three.png"
-#      link : "#"
-#
-#    - name : "sponsor"
-#      logo : "images/sponsors/pt-spon-four.png"
-#      link : "#"
-#
-#    - name : "sponsor"
-#      logo : "images/sponsors/pt-spon-three.png"
-#      link : "#"
-#
-#  - name : "Gold Sponsors"
-#    sponsor_item:
-#    - name : "sponsor"
-#      logo : "images/sponsors/gl-spon-two.png"
-#      link : "#"
-
-#    - name : "sponsor"
-#      logo : "images/sponsors/gl-spon-three.png"
-#      link : "#"
-
-#    - name : "sponsor"
-#      logo : "images/sponsors/gl-spon-one.png"
-#      link : "#"
-
-############### Call to action ############
-call_to_action:
-  enable : false
-  title : "Read more"
-  image : ""
-  content : ""
-  button:
+  button_outline:
     enable : true
-    label : "About"
-    link : "about"
+    label : "Contact Us"
+    link : "about/"
+
+################# Final texts ###################
+finaltext:
+  enable: true
+  titleSection : "Título de Sección"
+  title1 : "Titulo 1"
+  content1 : "Texto y Párrafo 1"
+  title2 : "Título 2"
+  content2 : "Texto y Párrafo 2"
