@@ -44,7 +44,7 @@ home = ["HTML"]
 # See https://github.com/disintegration/imaging
 # Default JPEG or WebP quality setting. Default is 75.
 quality = 90
-resampleFilter = "lanczos"
+resampleFilter = "Lanczos"
 
 ############################# Caches ###############################
 [caches]
@@ -221,17 +221,6 @@ label = "Call for papers"
 icon = "images/icon/form-icon.png"
 link = "call-for-papers/"
 
-
-
-# Subscription
-# [params.subscription]
-# enable = true
-# title = "Subscribe to Our Newsletter"
-# content = "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor"
-# mailchimp subsciption
-# mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-# mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
-
 # google map
 [params.map]
 enable = true
@@ -269,11 +258,6 @@ link = "https://twitter.com/foss4g"
 title = "mastodon"
 icon = "fa-mastodon" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
 link = "https://fosstodon.org/@foss4g"
-
-# [[params.social]]
-# title = "github"
-# icon = "fa-github" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
-# link = "https://github.com/2024-foss4g-europe/2024-foss4g-europe.github.io"
 
 [[params.social]]
 title = "linkedin"
