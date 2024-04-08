@@ -285,8 +285,12 @@ defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 [languages]
   [languages.en]
+
+  ######################################
+  ############## Español ###############
+  ######################################
+
   [languages.es]
-    contentDir = 'content/es'
     disabled = false
     languageCode = 'es-AR'
     languageDirection = 'ltr'
@@ -388,6 +392,118 @@ defaultContentLanguageInSubdir = true
         weight = 1
 
         [[languages.es.menu.main]]
+        identifier = "guided-tours"
+        parent = "attending"
+        name = "Visitas Guiadas"
+        url = "visitas-guiadas/"
+        weight = 2
+
+  ########################################
+  ############## Português ###############
+  ########################################
+
+  [languages.pt]
+    disabled = false
+    languageCode = 'es-AR'
+    languageDirection = 'ltr'
+    languageName = 'Español'
+    title = 'FOSS4G 2024'
+    weight = 1
+
+    # main menu
+    [[languages.pt.menu.main]]
+    identifier = "home"
+    name = "Começo"
+    url = "/"
+    weight = 1
+
+    [[languages.pt.menu.main]]
+    identifier = "about"
+    name = "Sobre"
+    url = "sobre/"
+    weight = 2
+
+        [[languages.pt.menu.main]]
+        identifier = "organizing-committee"
+        parent = "about"
+        name = "Comitê Organizador"
+        url = "comite-organizador/"
+        weight = 1
+
+        [[languages.pt.menu.main]]
+        identifier = "faq"
+        parent = "about"
+        name = "FAQ"
+        url = "faq/"
+        weight = 2
+
+        [[languages.pt.menu.main]]
+        identifier = "branding"
+        parent = "about"
+        name = "Marca"
+        url = "marca/"
+        weight = 3
+
+        [[languages.pt.menu.main]]
+        identifier = "attendee-guidelines"
+        parent = "about"
+        name = "Regras para Participantes"
+        url = "regras-para-participantes"
+        weight = 4
+
+        [[languages.pt.menu.main]]
+        identifier = "diversity"
+        parent = "about"
+        name = "Diversidade e Inclusão"
+        url = "diversidade-e-inclusao/"
+        weight = 5
+
+    [[languages.pt.menu.main]]
+    identifier = "registration"
+    name = "Registro"
+    url = "registro/"
+    weight = 5
+
+    [[languages.pt.menu.main]]
+    identifier = "schedule"
+    name = "Programa"
+    url = "programa/"
+    weight = 5
+
+        [[languages.pt.menu.main]]
+        identifier = "keynotes"
+        parent = "schedule"
+        name = "Keynotes"
+        url = "keynotes/"
+        weight = 1
+
+        [[languages.pt.menu.main]]
+        identifier = "b2b"
+        parent = "schedule"
+        name = "B2B"
+        url = "b2b/"
+        weight = 2
+
+    [[languages.pt.menu.main]]
+    identifier = "sponsors"
+    name = "Patrocinadores"
+    url = "patrocinadores/"
+    weight = 6
+
+    [[languages.pt.menu.main]]
+    identifier = "attending"
+    name = "Atendimento"
+    url = "atendimento/"
+    weight = 7
+
+        [[languages.pt.menu.main]]
+        identifier = "getting-to-belem"
+        parent = "attending"
+        name = "Chegando em Belém"
+        url = "chegando-em-belem/"
+        weight = 1
+
+        [[languages.pt.menu.main]]
         identifier = "guided-tours"
         parent = "attending"
         name = "Visitas Guiadas"
