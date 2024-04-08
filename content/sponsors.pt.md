@@ -1,5 +1,6 @@
 ---
 title: "Why becoming a sponsor?"
+slug: "patrocinadores"
 subtitle: "Sub-headline comes here"
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, velit."
 
