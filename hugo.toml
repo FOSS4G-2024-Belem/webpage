@@ -177,7 +177,6 @@ weight = 6
 name = "Attending"
 url = "Attending/"
 weight = 7
-hasChildren = true
 
     [[menu.main]]
     parent = "Attending"
@@ -190,86 +189,6 @@ hasChildren = true
     name = "Guided Tours"
     url = "guided-tours/"
     weight = 2
-
-# [[menu.main]]
-# name = "Registration"
-# url = "registration/"
-# weight = 4
-#
-#
-#  [[menu.main]]
-#  parent = "Sponsors"
-#  name = "Call for sponsors"
-#  url = "call-for-sponsors"
-#
-#[[menu.main]]
-#name = "Schedule"
-#url = "Schedule/"
-#weight = 5
-#
-# [[menu.main]]
-# weight = 6
-# name = "Venue"
-# hasChildren = true
-#
-#  [[menu.main]]
-#  parent = "Call for papers"
-#  name = "Workshops"
-#  url = "cfp-workshops"
-#
-#  [[menu.main]]
-#  parent = "Call for papers"
-#  name = "General program"
-#  url = "cfp-general-program"
-#
-#  [[menu.main]]
-#  parent = "Call for papers"
-#  name = "Academic program"
-#  url = "cfp-academic-program"
-#
-#  [[menu.main]]
-#  parent = "Venue"
-#  name = "Accommodation"
-#  url = "accommodation/"
-#
-#
-#
-#
-#
-#  [[menu.main]]
-#  parent = "Venue"
-#  name = "Getting to Belém"
-#  url = "getting-to-belem/"
-#
-#  [[menu.main]]
-#  parent = "Venue"
-#  name = "Attendee guidelines"
-#  url = "attendee-guidelines/"
-#
-#  [[menu.main]]
-#  parent = "Venue"
-#  name = "About Belém"
-#  url = "about-belem/"
-#
-##  [[menu.main]]
-##  parent = "Pages"
-##  name = "Pricing"
-##  url = "pricing/"
-#
-##  [[menu.main]]
-##  parent = "Pages"
-##  name = "Schedule"
-##  url = "schedule/"
-#
-##  [[menu.main]]
-##  parent = "Pages"
-##  name = "Testimonial"
-##  url = "testimonial/"
-#
-#[[menu.main]]
-#name = "Contact"
-#url = "contact/"
-#weight = 6
 
 
 
