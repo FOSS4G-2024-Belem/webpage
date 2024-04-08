@@ -107,84 +107,99 @@ attributes = ""
 
 # main menu
 [[menu.main]]
+identifier = "home"
 name = "Home"
 url = "/"
 weight = 1
 
 [[menu.main]]
+identifier = "about"
 name = "About"
 url = "about/"
 weight = 2
 
     [[menu.main]]
+    identifier = "organizing-committee"
     parent = "About"
     name = "Organizing committee"
     url = "team/"
     weight = 1
 
     [[menu.main]]
+    identifier = "faq"
     parent = "About"
     name = "FAQ"
     url = "faq/"
     weight = 2
 
     [[menu.main]]
+    identifier = "branding"
     parent = "About"
     name = "Branding"
     url = "branding/"
     weight = 3
 
     [[menu.main]]
+    identifier = "attendee-guidelines"
     parent = "About"
     name = "Attendee Guidelines"
     url = "attendee-guidelines/"
     weight = 4
 
     [[menu.main]]
+    identifier = "diversity"
     parent = "About"
     name = "Diversity and inclusion"
     url = "diversity/"
     weight = 5
 
 [[menu.main]]
+identifier = "registration"
 name = "Regstration"
 url = "Regstration/"
 weight = 5
 
 [[menu.main]]
+identifier = "schedule"
 name = "Schedule"
 url = "Schedule/"
 weight = 5
 
     [[menu.main]]
+    identifier = "keynotes"
     parent = "Schedule"
     name = "Keynotes"
     url = "Keynotes/"
     weight = 1
 
     [[menu.main]]
+    identifier = "b2b"
     parent = "Schedule"
     name = "B2B"
     url = "B2B/"
     weight = 2
 
 [[menu.main]]
+identifier = "sponsors"
 name = "Sponsors"
 url = "sponsors/"
 weight = 6
 
 [[menu.main]]
+identifier = "attending"
 name = "Attending"
 url = "Attending/"
 weight = 7
 
     [[menu.main]]
+    identifier = "getting-to-belem"
     parent = "Attending"
     name = "Getting to Belém"
     url = "getting-to-belem/"
     weight = 1
 
     [[menu.main]]
+    identifier = "guided-tours"
     parent = "Attending"
     name = "Guided Tours"
     url = "guided-tours/"
@@ -263,3 +278,18 @@ link = "https://fosstodon.org/@foss4g"
 title = "linkedin"
 icon = "fa-linkedin" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
 link = "https://www.linkedin.com/company/foss4g2024"
+
+
+############################# Languages ##############################
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+[languages]
+
+  ## 
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    weight = 1
