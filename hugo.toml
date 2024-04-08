@@ -149,8 +149,8 @@ weight = 2
     [[menu.main]]
     identifier = "diversity"
     parent = "about"
-    name = "Diversity and inclusion"
-    url = "diversity/"
+    name = "Diversity and Inclusion"
+    url = "diversity-and-inclusion/"
     weight = 5
 
 [[menu.main]]
