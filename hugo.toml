@@ -120,35 +120,35 @@ weight = 2
 
     [[menu.main]]
     identifier = "organizing-committee"
-    parent = "About"
+    parent = "about"
     name = "Organizing committee"
     url = "team/"
     weight = 1
 
     [[menu.main]]
     identifier = "faq"
-    parent = "About"
+    parent = "about"
     name = "FAQ"
     url = "faq/"
     weight = 2
 
     [[menu.main]]
     identifier = "branding"
-    parent = "About"
+    parent = "about"
     name = "Branding"
     url = "branding/"
     weight = 3
 
     [[menu.main]]
     identifier = "attendee-guidelines"
-    parent = "About"
+    parent = "about"
     name = "Attendee Guidelines"
     url = "attendee-guidelines/"
     weight = 4
 
     [[menu.main]]
     identifier = "diversity"
-    parent = "About"
+    parent = "about"
     name = "Diversity and inclusion"
     url = "diversity/"
     weight = 5
@@ -167,14 +167,14 @@ weight = 5
 
     [[menu.main]]
     identifier = "keynotes"
-    parent = "Schedule"
+    parent = "schedule"
     name = "Keynotes"
     url = "Keynotes/"
     weight = 1
 
     [[menu.main]]
     identifier = "b2b"
-    parent = "Schedule"
+    parent = "schedule"
     name = "B2B"
     url = "B2B/"
     weight = 2
@@ -193,14 +193,14 @@ weight = 7
 
     [[menu.main]]
     identifier = "getting-to-belem"
-    parent = "Attending"
+    parent = "attending"
     name = "Getting to Belém"
     url = "getting-to-belem/"
     weight = 1
 
     [[menu.main]]
     identifier = "guided-tours"
-    parent = "Attending"
+    parent = "attending"
     name = "Guided Tours"
     url = "guided-tours/"
     weight = 2
@@ -284,12 +284,112 @@ link = "https://www.linkedin.com/company/foss4g2024"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = true
 [languages]
-
-  ## 
   [languages.en]
-    contentDir = 'content/en'
+  [languages.es]
+    contentDir = 'content/es'
     disabled = false
-    languageCode = 'en-US'
+    languageCode = 'es-AR'
     languageDirection = 'ltr'
-    languageName = 'English'
+    languageName = 'Español'
+    title = 'FOSS4G 2024'
     weight = 1
+
+    # main menu
+    [[languages.es.menu.main]]
+    identifier = "home"
+    name = "Início"
+    url = "/"
+    weight = 1
+
+    [[languages.es.menu.main]]
+    identifier = "about"
+    name = "Acerca de"
+    url = "acerca-de/"
+    weight = 2
+
+        [[languages.es.menu.main]]
+        identifier = "organizing-committee"
+        parent = "about"
+        name = "Comité Organizador"
+        url = "comite-organizador/"
+        weight = 1
+
+        [[languages.es.menu.main]]
+        identifier = "faq"
+        parent = "about"
+        name = "FAQ"
+        url = "faq/"
+        weight = 2
+
+        [[languages.es.menu.main]]
+        identifier = "branding"
+        parent = "about"
+        name = "Marca"
+        url = "marca/"
+        weight = 3
+
+        [[languages.es.menu.main]]
+        identifier = "attendee-guidelines"
+        parent = "about"
+        name = "Normas Para Participantes"
+        url = "normas-para-participantes"
+        weight = 4
+
+        [[languages.es.menu.main]]
+        identifier = "diversity"
+        parent = "about"
+        name = "Diversidad y Inclusión"
+        url = "diversidad-y-inclusion/"
+        weight = 5
+
+    [[languages.es.menu.main]]
+    identifier = "registration"
+    name = "Inscripción"
+    url = "inscripcion/"
+    weight = 5
+
+    [[languages.es.menu.main]]
+    identifier = "schedule"
+    name = "Programa"
+    url = "programa/"
+    weight = 5
+
+        [[languages.es.menu.main]]
+        identifier = "keynotes"
+        parent = "schedule"
+        name = "Keynotes"
+        url = "keynotes/"
+        weight = 1
+
+        [[languages.es.menu.main]]
+        identifier = "b2b"
+        parent = "schedule"
+        name = "B2B"
+        url = "b2b/"
+        weight = 2
+
+    [[languages.es.menu.main]]
+    identifier = "sponsors"
+    name = "Patrocinadores"
+    url = "patrocinadores/"
+    weight = 6
+
+    [[languages.es.menu.main]]
+    identifier = "attending"
+    name = "Asistiendo"
+    url = "asistiendo/"
+    weight = 7
+
+        [[languages.es.menu.main]]
+        identifier = "getting-to-belem"
+        parent = "attending"
+        name = "Llegando a Belém"
+        url = "llegando-a-belem/"
+        weight = 1
+
+        [[languages.es.menu.main]]
+        identifier = "guided-tours"
+        parent = "attending"
+        name = "Visitas Guiadas"
+        url = "visitas-guiadas/"
+        weight = 2
