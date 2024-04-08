@@ -109,7 +109,7 @@ attributes = ""
 [[menu.main]]
 identifier = "home"
 name = "Home"
-url = "/"
+url = ""
 weight = 1
 
 [[menu.main]]
@@ -156,20 +156,20 @@ weight = 2
 [[menu.main]]
 identifier = "registration"
 name = "Regstration"
-url = "Regstration/"
+url = "regstration/"
 weight = 5
 
 [[menu.main]]
 identifier = "schedule"
 name = "Schedule"
-url = "Schedule/"
+url = "schedule/"
 weight = 5
 
     [[menu.main]]
     identifier = "keynotes"
     parent = "schedule"
     name = "Keynotes"
-    url = "Keynotes/"
+    url = "keynotes/"
     weight = 1
 
     [[menu.main]]
@@ -188,7 +188,7 @@ weight = 6
 [[menu.main]]
 identifier = "attending"
 name = "Attending"
-url = "Attending/"
+url = "attending/"
 weight = 7
 
     [[menu.main]]
@@ -298,11 +298,17 @@ defaultContentLanguageInSubdir = true
     title = 'FOSS4G 2024'
     weight = 1
 
+    [languages.es.params.navigation_button]
+    enable = true
+    label = "Convocatoria de Ponencias"
+    icon = "images/icon/form-icon.png"
+    link = "convocatoria-de-ponencias/"
+
     # main menu
     [[languages.es.menu.main]]
     identifier = "home"
     name = "Início"
-    url = "/"
+    url = ""
     weight = 1
 
     [[languages.es.menu.main]]
@@ -410,11 +416,17 @@ defaultContentLanguageInSubdir = true
     title = 'FOSS4G 2024'
     weight = 1
 
+    [languages.pt.params.navigation_button]
+    enable = true
+    label = "Chamada para Artigos"
+    icon = "images/icon/form-icon.png"
+    link = "chamada-para-artigos/"
+
     # main menu
     [[languages.pt.menu.main]]
     identifier = "home"
     name = "Começo"
-    url = "/"
+    url = ""
     weight = 1
 
     [[languages.pt.menu.main]]
