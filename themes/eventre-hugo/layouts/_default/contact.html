@@ -11,13 +11,13 @@
 </style>
 
 <div style="position: absolute; right: 0; top: 7%; z-index: -1;">
-	<img src="../images/contact-image.png" alt="">
+	<img src="{{ "../images/contact-image.png" | absURL }}" alt="">
 </div>
 
 <section class="section contact-form">
 	<div class="row" style="max-width: 100%;">
 		<div class="col-md-6">
-			<img class="img-fluid" src="../images/contact-image2.jpg" alt="">
+			<img class="img-fluid" src="{{ "../images/contact-image2.png" | absURL }}" alt="">
 		</div>
 		<div class="col-md-6">
 			<p>{{ .Params.description | markdownify }}</p>

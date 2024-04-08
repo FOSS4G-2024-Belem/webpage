@@ -44,7 +44,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-1 d-none d-md-block">
-				<img src="images/ABOUT-FOSS4G.png" style="width: auto; height: 240px;">
+				<img src="{{ "images/ABOUT-FOSS4G.png" | absURL }}" style="width: auto; height: 240px;">
 			</div>
 			<div class="col-md-5 align-self-center">
 				<div class="content-block">
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 			<div class="col-md-6 align-self-center">
-				<img src="images/arrow-brown.png" style="margin-left: 27px; width: auto; height: 45px;">
+				<img src="{{ "images/arrow-brown.png" | absURL }}" style="margin-left: 27px; width: auto; height: 45px;">
 				<div class="image-block">
 					{{ .video | markdownify}}
 				</div>
@@ -208,7 +208,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 d-none d-md-block" style="text-align: right; padding-right: 40px;">
-				<img src="images/flechas_blanco.png" style="transform: rotate(-90deg);" alt="">
+				<img src="{{ "images/flechas_blanco.png" | absURL }}" style="transform: rotate(-90deg);" alt="">
 			</div>
 			<div class="col-md-4" style="padding: 0; text-align: center;">
 				<a href="{{ .link1 | absURL }}" class="btn btn-main-md">Register Now</a>
@@ -225,7 +225,7 @@
 
 
 	<div class="registerItem">
-		<img src="images/flechas_blanco.png" style="height: 86px; width: 34px;" alt="">
+		<img src="{{ "images/flechas_blanco.png" | absURL }}" style="height: 86px; width: 34px;" alt="">
 		<a href="{{ .link3 | absURL }}">
 			<h3>Where to stay?</h3>
 		</a>
@@ -258,7 +258,7 @@
 
 <style>
 	section.latest {
-		background: url("images/belem-background.png");
+		background: url({{ "images/belem-background.png" | absURL }});
 		background-position: 63% 73%;
 		background-repeat: no-repeat;
 	}
@@ -302,7 +302,7 @@
 		<div class="belem-background"></div>
 		<div class="row" style="padding-bottom: 0;">
 			<div class="col-sm-1 d-none d-md-block">
-				<img src="images/FIND-OUT.png" style="transform: scale(85%); position: absolute; left: 0;" alt="">
+				<img src="{{ "images/FIND-OUT.png" | absURL }}" style="transform: scale(85%); position: absolute; left: 0;" alt="">
 			</div>
 			<div class="headingLatest col-lg-5 col-md-10 offset-md-1">
 				<h3>{{.title | markdownify}}</h3>
