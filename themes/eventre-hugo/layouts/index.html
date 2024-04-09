@@ -44,7 +44,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-1 d-none d-md-block">
-				<img src="images/ABOUT-FOSS4G.png" style="width: auto; height: 240px;">
+				<img src="{{ "images/ABOUT-FOSS4G.png" | absURL }}" style="width: auto; height: 240px;">
 			</div>
 			<div class="col-md-5 align-self-center">
 				<div class="content-block">
@@ -71,7 +71,7 @@
 				</div>
 			</div>
 			<div class="col-md-6 align-self-center">
-				<img src="images/arrow-brown.png" style="margin-left: 27px; width: auto; height: 45px;">
+				<img src="{{ "images/arrow-brown.png" | absURL }}" style="margin-left: 27px; width: auto; height: 45px;">
 				<div class="image-block">
 					{{ .video | markdownify}}
 				</div>
@@ -112,7 +112,7 @@
 
 	div.registerItemFeatured {
 		grid-row: 1/3;
-		background: url("images/register-img.jpg");
+		background: url("{{ "images/register-img.jpg" | absURL }}");
 		background-size: cover;
 	}
 
@@ -124,7 +124,7 @@
 	}
 
 	section.registerGrid div.registerItem:nth-child(2) {
-		background: url("images/workshops-background.png");
+		background: url("{{ "images/workshops-background.png" | absURL }}");
 	}
 
 	section.registerGrid div.registerItem:nth-child(3) {
@@ -132,11 +132,11 @@
 	}
 
 	section.registerGrid div.registerItem:nth-child(4) {
-		background: url("images/program-background.png");
+		background: url("{{ "images/program-background.png" | absURL }}");
 	}
 
 	section.registerGrid div.registerItem:nth-child(5) {
-		background: url("images/social-events-img.jpg");
+		background: url("{{ "images/social-events-img.jpg" | absURL }}");
 		background-size: cover;
 	}
 
@@ -208,7 +208,7 @@
 		</div>
 		<div class="row">
 			<div class="col-md-4 d-none d-md-block" style="text-align: right; padding-right: 40px;">
-				<img src="images/flechas_blanco.png" style="transform: rotate(-90deg);" alt="">
+				<img src="{{ "images/flechas_blanco.png" | absURL }}" style="transform: rotate(-90deg);" alt="">
 			</div>
 			<div class="col-md-4" style="padding: 0; text-align: center;">
 				<a href="{{ .link1 | absURL }}" class="btn btn-main-md">Register Now</a>
@@ -225,7 +225,7 @@
 
 
 	<div class="registerItem">
-		<img src="images/flechas_blanco.png" style="height: 86px; width: 34px;" alt="">
+		<img src="{{ "images/flechas_blanco.png" | absURL }}" style="height: 86px; width: 34px;" alt="">
 		<a href="{{ .link3 | absURL }}">
 			<h3>Where to stay?</h3>
 		</a>
@@ -258,7 +258,7 @@
 
 <style>
 	section.latest {
-		background: url("images/belem-background.png");
+		background: url("{{ "images/belem-background.png" | absURL }}");
 		background-position: 63% 73%;
 		background-repeat: no-repeat;
 	}
@@ -302,7 +302,7 @@
 		<div class="belem-background"></div>
 		<div class="row" style="padding-bottom: 0;">
 			<div class="col-sm-1 d-none d-md-block">
-				<img src="images/FIND-OUT.png" style="transform: scale(85%); position: absolute; left: 0;" alt="">
+				<img src="{{ "images/FIND-OUT.png" | absURL }}" style="transform: scale(85%); position: absolute; left: 0;" alt="">
 			</div>
 			<div class="headingLatest col-lg-5 col-md-10 offset-md-1">
 				<h3>{{.title | markdownify}}</h3>
@@ -313,7 +313,7 @@
 			<div class="col-md-4 offset-lg-7">
 				<div class="card">
 					<div class="card-block">
-						<div class="cardImage" style="background: url('{{ .card1Image}}');"></div>
+						<div class="cardImage" style="background: url('{{ .card1Image | absURL}}');"></div>
 						<div class="cardContent">
 							<h4 class="card-title">{{.card1Title | markdownify}}</h4>
 							<p class="card-text p-y-1">{{.card1Text | markdownify}}</p>
@@ -330,7 +330,7 @@
 			<div class="col-md-4 offset-lg-3">
 				<div class="card cardMiddle">
 					<div class="card-block">
-						<div class="cardImage" style="background: url('{{ .card2Image}}');"></div>
+						<div class="cardImage" style="background: url('{{ .card2Image | absURL}}');"></div>
 						<div class="cardContent">
 							<h4 class="card-title">{{.card2Title | markdownify}}</h4>
 							<p class="card-text p-y-1">{{.card2Text | markdownify}}</p>
@@ -347,7 +347,7 @@
 			<div class="col-md-4">
 				<div class="card">
 					<div class="card-block">
-						<div class="cardImage" style="background: url('{{ .card3Image}}');"></div>
+						<div class="cardImage" style="background: url('{{ .card3Image | absURL}}');"></div>
 						<div class="cardContent">
 							<h4 class="card-title">{{.card3Title | markdownify}}</h4>
 							<p class="card-text p-y-1">{{.card3Text | markdownify}}</p>
@@ -372,7 +372,7 @@
 
 <style>
 	section.promote {
-		background: url("images/promote-backround.png");
+		background: url("{{ "images/promote-backround.png" | absURL }}");
 		background-size: cover;
 		background-position: center right;
 		padding: 0;

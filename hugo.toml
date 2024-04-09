@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://felipesbarros.github.io/foss4g_template/"
+baseURL = "https://FOSS4G-2024-Belem.github.io/webpage/"
 title = "FOSS4G 2024"
 theme = "eventre-hugo"
 # Default time zone for time stamps; use any valid tz database name: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List
@@ -44,7 +44,7 @@ home = ["HTML"]
 # See https://github.com/disintegration/imaging
 # Default JPEG or WebP quality setting. Default is 75.
 quality = 90
-resampleFilter = "lanczos"
+resampleFilter = "Lanczos"
 
 ############################# Caches ###############################
 [caches]
@@ -107,169 +107,103 @@ attributes = ""
 
 # main menu
 [[menu.main]]
+identifier = "home"
 name = "Home"
-url = "/"
+url = ""
 weight = 1
 
 [[menu.main]]
+identifier = "about"
 name = "About"
 url = "about/"
 weight = 2
 
     [[menu.main]]
-    parent = "About"
+    identifier = "organizing-committee"
+    parent = "about"
     name = "Organizing committee"
     url = "team/"
     weight = 1
 
     [[menu.main]]
-    parent = "About"
+    identifier = "faq"
+    parent = "about"
     name = "FAQ"
     url = "faq/"
     weight = 2
 
     [[menu.main]]
-    parent = "About"
+    identifier = "branding"
+    parent = "about"
     name = "Branding"
     url = "branding/"
     weight = 3
 
     [[menu.main]]
-    parent = "About"
+    identifier = "attendee-guidelines"
+    parent = "about"
     name = "Attendee Guidelines"
     url = "attendee-guidelines/"
     weight = 4
 
     [[menu.main]]
-    parent = "About"
-    name = "Diversity and inclusion"
-    url = "diversity/"
+    identifier = "diversity"
+    parent = "about"
+    name = "Diversity and Inclusion"
+    url = "diversity-and-inclusion/"
     weight = 5
 
 [[menu.main]]
+identifier = "registration"
 name = "Regstration"
-url = "Regstration/"
+url = "regstration/"
 weight = 5
 
 [[menu.main]]
+identifier = "schedule"
 name = "Schedule"
-url = "Schedule/"
+url = "schedule/"
 weight = 5
 
     [[menu.main]]
-    parent = "Schedule"
+    identifier = "keynotes"
+    parent = "schedule"
     name = "Keynotes"
-    url = "Keynotes/"
+    url = "keynotes/"
     weight = 1
 
     [[menu.main]]
-    parent = "Schedule"
+    identifier = "b2b"
+    parent = "schedule"
     name = "B2B"
     url = "B2B/"
     weight = 2
 
 [[menu.main]]
+identifier = "sponsors"
 name = "Sponsors"
 url = "sponsors/"
 weight = 6
 
 [[menu.main]]
+identifier = "attending"
 name = "Attending"
-url = "Attending/"
+url = "attending/"
 weight = 7
-hasChildren = true
 
     [[menu.main]]
-    parent = "Attending"
+    identifier = "getting-to-belem"
+    parent = "attending"
     name = "Getting to Belém"
     url = "getting-to-belem/"
     weight = 1
 
     [[menu.main]]
-    parent = "Attending"
+    identifier = "guided-tours"
+    parent = "attending"
     name = "Guided Tours"
     url = "guided-tours/"
     weight = 2
-
-# [[menu.main]]
-# name = "Registration"
-# url = "registration/"
-# weight = 4
-#
-#
-#  [[menu.main]]
-#  parent = "Sponsors"
-#  name = "Call for sponsors"
-#  url = "call-for-sponsors"
-#
-#[[menu.main]]
-#name = "Schedule"
-#url = "Schedule/"
-#weight = 5
-#
-# [[menu.main]]
-# weight = 6
-# name = "Venue"
-# hasChildren = true
-#
-#  [[menu.main]]
-#  parent = "Call for papers"
-#  name = "Workshops"
-#  url = "cfp-workshops"
-#
-#  [[menu.main]]
-#  parent = "Call for papers"
-#  name = "General program"
-#  url = "cfp-general-program"
-#
-#  [[menu.main]]
-#  parent = "Call for papers"
-#  name = "Academic program"
-#  url = "cfp-academic-program"
-#
-#  [[menu.main]]
-#  parent = "Venue"
-#  name = "Accommodation"
-#  url = "accommodation/"
-#
-#
-#
-#
-#
-#  [[menu.main]]
-#  parent = "Venue"
-#  name = "Getting to Belém"
-#  url = "getting-to-belem/"
-#
-#  [[menu.main]]
-#  parent = "Venue"
-#  name = "Attendee guidelines"
-#  url = "attendee-guidelines/"
-#
-#  [[menu.main]]
-#  parent = "Venue"
-#  name = "About Belém"
-#  url = "about-belem/"
-#
-##  [[menu.main]]
-##  parent = "Pages"
-##  name = "Pricing"
-##  url = "pricing/"
-#
-##  [[menu.main]]
-##  parent = "Pages"
-##  name = "Schedule"
-##  url = "schedule/"
-#
-##  [[menu.main]]
-##  parent = "Pages"
-##  name = "Testimonial"
-##  url = "testimonial/"
-#
-#[[menu.main]]
-#name = "Contact"
-#url = "contact/"
-#weight = 6
 
 
 
@@ -301,17 +235,6 @@ enable = true
 label = "Call for papers"
 icon = "images/icon/form-icon.png"
 link = "call-for-papers/"
-
-
-
-# Subscription
-# [params.subscription]
-# enable = true
-# title = "Subscribe to Our Newsletter"
-# content = "Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusm tempor"
-# mailchimp subsciption
-# mailchimp_form_action = "https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074" # replace this url with yours
-# mailchimp_form_name = "b_463ee871f45d2d93748e77cad_a0a2c6d074" # replace this code with yours
 
 # google map
 [params.map]
@@ -351,12 +274,250 @@ title = "mastodon"
 icon = "fa-mastodon" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
 link = "https://fosstodon.org/@foss4g"
 
-# [[params.social]]
-# title = "github"
-# icon = "fa-github" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
-# link = "https://github.com/2024-foss4g-europe/2024-foss4g-europe.github.io"
-
 [[params.social]]
 title = "linkedin"
 icon = "fa-linkedin" # fontawesome icon pack v4.7 https://fontawesome.com/v4.7.0/icons/
 link = "https://www.linkedin.com/company/foss4g2024"
+
+
+############################# Languages ##############################
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+[languages]
+  [languages.en]
+
+  ######################################
+  ############## Español ###############
+  ######################################
+
+  [languages.es]
+    disabled = false
+    languageCode = 'es-AR'
+    languageDirection = 'ltr'
+    languageName = 'Español'
+    title = 'FOSS4G 2024'
+    weight = 1
+
+    [languages.es.params.navigation_button]
+    enable = true
+    label = "Convocatoria de Ponencias"
+    icon = "images/icon/form-icon.png"
+    link = "convocatoria-de-ponencias/"
+
+    # main menu
+    [[languages.es.menu.main]]
+    identifier = "home"
+    name = "Início"
+    url = ""
+    weight = 1
+
+    [[languages.es.menu.main]]
+    identifier = "about"
+    name = "Acerca de"
+    url = "acerca-de/"
+    weight = 2
+
+        [[languages.es.menu.main]]
+        identifier = "organizing-committee"
+        parent = "about"
+        name = "Comité Organizador"
+        url = "comite-organizador/"
+        weight = 1
+
+        [[languages.es.menu.main]]
+        identifier = "faq"
+        parent = "about"
+        name = "FAQ"
+        url = "faq/"
+        weight = 2
+
+        [[languages.es.menu.main]]
+        identifier = "branding"
+        parent = "about"
+        name = "Marca"
+        url = "marca/"
+        weight = 3
+
+        [[languages.es.menu.main]]
+        identifier = "attendee-guidelines"
+        parent = "about"
+        name = "Normas Para Participantes"
+        url = "normas-para-participantes"
+        weight = 4
+
+        [[languages.es.menu.main]]
+        identifier = "diversity"
+        parent = "about"
+        name = "Diversidad y Inclusión"
+        url = "diversidad-y-inclusion/"
+        weight = 5
+
+    [[languages.es.menu.main]]
+    identifier = "registration"
+    name = "Inscripción"
+    url = "inscripcion/"
+    weight = 5
+
+    [[languages.es.menu.main]]
+    identifier = "schedule"
+    name = "Programa"
+    url = "programa/"
+    weight = 5
+
+        [[languages.es.menu.main]]
+        identifier = "keynotes"
+        parent = "schedule"
+        name = "Keynotes"
+        url = "keynotes/"
+        weight = 1
+
+        [[languages.es.menu.main]]
+        identifier = "b2b"
+        parent = "schedule"
+        name = "B2B"
+        url = "b2b/"
+        weight = 2
+
+    [[languages.es.menu.main]]
+    identifier = "sponsors"
+    name = "Patrocinadores"
+    url = "patrocinadores/"
+    weight = 6
+
+    [[languages.es.menu.main]]
+    identifier = "attending"
+    name = "Asistiendo"
+    url = "asistiendo/"
+    weight = 7
+
+        [[languages.es.menu.main]]
+        identifier = "getting-to-belem"
+        parent = "attending"
+        name = "Llegando a Belém"
+        url = "llegando-a-belem/"
+        weight = 1
+
+        [[languages.es.menu.main]]
+        identifier = "guided-tours"
+        parent = "attending"
+        name = "Visitas Guiadas"
+        url = "visitas-guiadas/"
+        weight = 2
+
+  ########################################
+  ############## Português ###############
+  ########################################
+
+  [languages.pt]
+    disabled = false
+    languageCode = 'es-AR'
+    languageDirection = 'ltr'
+    languageName = 'Español'
+    title = 'FOSS4G 2024'
+    weight = 1
+
+    [languages.pt.params.navigation_button]
+    enable = true
+    label = "Chamada para Artigos"
+    icon = "images/icon/form-icon.png"
+    link = "chamada-para-artigos/"
+
+    # main menu
+    [[languages.pt.menu.main]]
+    identifier = "home"
+    name = "Começo"
+    url = ""
+    weight = 1
+
+    [[languages.pt.menu.main]]
+    identifier = "about"
+    name = "Sobre"
+    url = "sobre/"
+    weight = 2
+
+        [[languages.pt.menu.main]]
+        identifier = "organizing-committee"
+        parent = "about"
+        name = "Comitê Organizador"
+        url = "comite-organizador/"
+        weight = 1
+
+        [[languages.pt.menu.main]]
+        identifier = "faq"
+        parent = "about"
+        name = "FAQ"
+        url = "faq/"
+        weight = 2
+
+        [[languages.pt.menu.main]]
+        identifier = "branding"
+        parent = "about"
+        name = "Marca"
+        url = "marca/"
+        weight = 3
+
+        [[languages.pt.menu.main]]
+        identifier = "attendee-guidelines"
+        parent = "about"
+        name = "Regras para Participantes"
+        url = "regras-para-participantes"
+        weight = 4
+
+        [[languages.pt.menu.main]]
+        identifier = "diversity"
+        parent = "about"
+        name = "Diversidade e Inclusão"
+        url = "diversidade-e-inclusao/"
+        weight = 5
+
+    [[languages.pt.menu.main]]
+    identifier = "registration"
+    name = "Registro"
+    url = "registro/"
+    weight = 5
+
+    [[languages.pt.menu.main]]
+    identifier = "schedule"
+    name = "Programa"
+    url = "programa/"
+    weight = 5
+
+        [[languages.pt.menu.main]]
+        identifier = "keynotes"
+        parent = "schedule"
+        name = "Keynotes"
+        url = "keynotes/"
+        weight = 1
+
+        [[languages.pt.menu.main]]
+        identifier = "b2b"
+        parent = "schedule"
+        name = "B2B"
+        url = "b2b/"
+        weight = 2
+
+    [[languages.pt.menu.main]]
+    identifier = "sponsors"
+    name = "Patrocinadores"
+    url = "patrocinadores/"
+    weight = 6
+
+    [[languages.pt.menu.main]]
+    identifier = "attending"
+    name = "Atendimento"
+    url = "atendimento/"
+    weight = 7
+
+        [[languages.pt.menu.main]]
+        identifier = "getting-to-belem"
+        parent = "attending"
+        name = "Chegando em Belém"
+        url = "chegando-em-belem/"
+        weight = 1
+
+        [[languages.pt.menu.main]]
+        identifier = "guided-tours"
+        parent = "attending"
+        name = "Visitas Guiadas"
+        url = "visitas-guiadas/"
+        weight = 2
