@@ -194,10 +194,10 @@ weight = 5
     weight = 2
 
     [[menu.main]]
-    identifier = "community-spirit"
+    identifier = "community-sprint"
     parent = "schedule"
-    name = "Community Spirit"
-    url = "community-spirit/"
+    name = "Community Sprint"
+    url = "community-sprint/"
     weight = 3
 
     [[menu.main]]
