@@ -1,0 +1,143 @@
+{{ define "main" }}
+<style>
+	.speakers.white .speaker-item {
+		border: none;
+	}
+	.shadow, .testimonial .testimonial-item .comment:hover, 
+	.news-hr .news-post-hr:hover, 
+	ul.pagination .active a, 
+	ul.pagination li a:hover, 
+	ul.pagination li a:focus, 
+	.sponsors .block .image-block:hover, 
+	.schedule.two .schedule-contents, 
+	.speakers.white .speaker-item:hover {
+		box-shadow: none; 
+	}
+	.speakers.white .image {
+  		border: double 6px transparent;
+  		border-radius: 50%;
+ 	 	background-image: linear-gradient(white, white), radial-gradient(circle at top left, #BDD18D, #49B09D);
+  		background-origin: border-box;
+  		background-clip: content-box, border-box;
+	}
+	.content a {
+		color:#49B09D !important;
+	}
+	.content a:hover {
+		color:#267c6c !important;
+	}
+	.image a img:hover {
+		transform: scale(110%);
+		transition: all .5s ease;
+	}
+</style>
+
+<!-- PROGRAM COMMITTEE -->
+<section class="section speakers white">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 section-title">
+        		<h2>Program Committee</h2>
+			</div>
+		</div>
+		<div class="row">
+
+			{{ range .Site.Data.committees.program }}
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 1 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="{{ "images/committee/program/" | absURL }}{{  . | urlize }}.jpg" alt="{{ . }}" class="img-fluid">
+					</div>
+					<div class="content text-center">
+						<h5>{{ . }}</h5>
+					</div>
+				</div>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+<!-- LOC COMMITTEE -->
+<section class="section speakers white">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 section-title">
+        		<h2>LOC Committee</h2>
+			</div>
+		</div>
+		<div class="row">
+
+			{{ range .Site.Data.committees.loc }}
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 1 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="{{ "images/committee/loc/" | absURL }}{{  . | urlize }}.jpg" alt="{{ . }}" class="img-fluid">
+					</div>
+					<div class="content text-center">
+						<h5>{{ . }}</h5>
+					</div>
+				</div>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+<!-- ACADEMIC COMMITTEE -->
+<section class="section speakers white">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 section-title">
+        		<h2>Academic Committee</h2>
+			</div>
+		</div>
+		<div class="row">
+
+			{{ range .Site.Data.committees.academic }}
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 1 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="{{ "images/committee/academic/" | absURL }}{{  . | urlize }}.jpg" alt="{{ . }}" class="img-fluid">
+					</div>
+					<div class="content text-center">
+						<h5>{{ . }}</h5>
+					</div>
+				</div>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+<!-- SPONSOR COMMITTEE -->
+<section class="section speakers white">
+	<div class="container">
+		<div class="row">
+			<div class="col-12 section-title">
+        		<h2>Sponsor Committee</h2>
+			</div>
+		</div>
+		<div class="row">
+
+			{{ range .Site.Data.committees.sponsor }}
+			<div class="col-lg-3 col-md-4 col-sm-6">
+				<!-- Speaker 1 -->
+				<div class="speaker-item">
+					<div class="image">
+						<img src="{{ "images/committee/sponsor/" | absURL }}{{  . | urlize }}.jpg" alt="{{ . }}" class="img-fluid">
+					</div>
+					<div class="content text-center">
+						<h5>{{ . }}</h5>
+					</div>
+				</div>
+				</div>
+			{{ end }}
+		</div>
+	</div>
+</section>
+
+{{ end }}

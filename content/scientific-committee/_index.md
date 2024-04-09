@@ -1,6 +1,5 @@
 ---
 title : "Scientific Committee"
-page_header_bg : "images/background/page-title-bg.jpg"
 date: 2020-12-03T22:44:24+02:00
 description : "Meet the FOSS4G Europe 2024 Scientific Committee."
 draft : false
