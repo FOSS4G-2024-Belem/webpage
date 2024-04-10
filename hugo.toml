@@ -232,7 +232,7 @@ weight = 7
     name = "Getting to Belém"
     url = "getting-to-belem/"
     weight = 2
-
+    
     [[menu.main]]
     identifier = "accommodation"
     parent = "attending"
