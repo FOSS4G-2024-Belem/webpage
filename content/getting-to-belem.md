@@ -1,17 +1,11 @@
 ---
 title: "Getting to Belém"
-page_header_bg: "images/background/page-title-bg.jpg"
-date: 2020-03-14T15:40:24+06:00
-description: "How to Arrive to the Conference!"
-draft: false
 layout: "single"
 ---
 
 ### Transport to Belém
 
----
-
-**Air**
+#### By Air
 
 [Val de Cães (BEL) International Airport](https://en.wikipedia.org/wiki/Bel%C3%A9m/Val-de-Cans_International_Airport) is a medium-sized international airport in Brazil. 
 
@@ -30,20 +24,35 @@ There are 21 different direct flight options coming from inside Brazil, some can
 - Recife
 - Brasilia
 
-[The map containing all the destinations can be checked here](https://www.flightradar24.com/data/airports/bel/routes)
+[The map containing all the destinations can be checked here](https://www.flightradar24.com/data/airports/bel/routes).
+
+Prices vary according to their origin and the stops that occur in flights. There are tickets for USD 600 from Latin American countries with one or more stops, or for USD 1500, from Tokyo, Japan.
 
 Telephone contact: +55 (91) 3210-6000
 
----
+#### By sea
 
-**Boat**
+In addition to access by air, the city has an excellent structure for river transport. El Puerto de Belém connects with several other destinations in the north of Brazil, such as Manaos, Santarém and Macapá.
 
-In addition to access by air, the city has an excellent structure for river transport. The Port of Belém connects with several other destinations in the north of Brazil, such as Manaus, Santarém, and Macapá.
-Those who want to visit Belém can also invest in boat trips, such as the famous crossing from Manaus to Belém, which passes through Santarém (gateway to Alter do Chão) and Marajó. It may not be a quick way to get there, but it is certainly a wonderful trip that is worth every minute and every view of the experience. There are several companies that carry out the route. We made the trip between Santarém and Belém with the Amazon Starship. The same boat makes the trip from Manaus and Belém.
+To enter Belém do Pará by sea, there are two main entry points:
 
-Telephone contact: +55 (91) 98895-6563
+- **Puerto de Belém**: Belém has an important commercial port, so arriving by sea directly to this port is a common option. Cargo boats and passengers can dock at the port of Belém, which is located in the center of the city.
 
----
+- **Puerto de Val de Cans**: this is the port of Belém that receives passenger and tourist boats. It is located about 10 kilometers from the center of the city and is where cruisers and some passenger boats land.
+
+Remember to bring the necessary documents to enter through customs: such as your valid passport, visa if necessary, boarding pass, among other documents.
+
+#### By car
+
+Belém do Pará has several ways of access by road from other parts of the country. However, since the city is located in the northern region of Brazil, main access from other countries by road usually involves entering from the borders with neighboring countries, especially from Suriname, Guyana and Venezuela.
+
+Here are some main border routes you could consider to enter Belém do Pará by road from other countries:
+- Frontera con Surinam (Oiapoque - Albina)
+- Frontera con Guyana (Bonfim - Lethem) 
+- Frontera con Venezuela (Pacaraima - Santa Elena de Uairén)
+
+For more information on border points and travel routes, we suggest using OpenStreetMap, as it provides specific directions to and from Belém do Pará.
+
 
 #### Transport in the city
 
@@ -64,8 +73,6 @@ The value of the transport tariff by selective minibus is readjusted to R$ 6.40 
 The value of the supplementary transport fee in the District of Mosqueiro is readjusted to R$ 4.00 (four reais) and the half fare is fixed at R$ 2.00 (two reais).
 
 **Public transport is paid in cash.**
-
----
 
 **Private transport service in Belém** 
 The main tourist spots in Belém aren't really far away from each other, therefore, especially if you can share a ride, the costs will be quite low when using apps like Uber, Cabify, or 99. For many attractions, you can go just by taking a small walk.

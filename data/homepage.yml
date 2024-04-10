@@ -23,7 +23,7 @@ FOSS4G brings together developers, users, decision-makers and observers from a b
   button_solid:
     enable : true
     label : "Buy ticket"
-    link : "pricing/"
+    link : "registration/"
   button_outline:
     enable : false
     label : "Read more"
@@ -33,11 +33,11 @@ FOSS4G brings together developers, users, decision-makers and observers from a b
 ################# Register ###################
 register:
   enable: true
-  link1: register/
+  link1: registration/
   link2: workshops/
-  link3: stay/
+  link3: accommodation/
   link4: program/
-  link5: events/
+  link5: social-events/
 
 ################# Latest ###################
 latest:
@@ -84,11 +84,11 @@ promote:
   button_outline:
     enable : true
     label : "Contact Us"
-    link : "about/"
+    link : "contact/"
 
 ################# Final texts ###################
 finaltext:
-  enable: true
+  enable: false
   titleSection : "Título de Sección"
   title1 : "Titulo 1"
   content1 : "Texto y Párrafo 1"

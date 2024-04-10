@@ -105,7 +105,7 @@ attributes = ""
 
 ####################### navigation ##########################
 
-# main menu
+# new navigation
 [[menu.main]]
 identifier = "home"
 name = "Home"
@@ -119,16 +119,16 @@ url = "about/"
 weight = 2
 
     [[menu.main]]
-    identifier = "organizing-committee"
+    identifier = "committees"
     parent = "about"
-    name = "Organizing committee"
-    url = "team/"
+    name = "Committees"
+    url = "committees/"
     weight = 1
 
     [[menu.main]]
     identifier = "faq"
     parent = "about"
-    name = "FAQ"
+    name = "Frequently Asked Questions (FAQ)"
     url = "faq/"
     weight = 2
 
@@ -140,17 +140,17 @@ weight = 2
     weight = 3
 
     [[menu.main]]
-    identifier = "attendee-guidelines"
+    identifier = "code-of-conduct"
     parent = "about"
-    name = "Attendee Guidelines"
-    url = "attendee-guidelines/"
+    name = "Code of Conduct"
+    url = "code-of-conduct/"
     weight = 4
 
     [[menu.main]]
-    identifier = "diversity"
+    identifier = "privacy-policy"
     parent = "about"
-    name = "Diversity and Inclusion"
-    url = "diversity-and-inclusion/"
+    name = "Privacy Policy"
+    url = "privacy-policy/"
     weight = 5
 
 [[menu.main]]
@@ -159,6 +159,20 @@ name = "Regstration"
 url = "regstration/"
 weight = 5
 
+    [[menu.main]]
+    identifier = "visa-info"
+    parent = "registration"
+    name = "Visa Info"
+    url = "visa-info/"
+    weight = 1
+
+    [[menu.main]]
+    identifier = "travel-grant"
+    parent = "registration"
+    name = "Travel Grant Program"
+    url = "travel-grant-program/"
+    weight = 2
+
 [[menu.main]]
 identifier = "schedule"
 name = "Schedule"
@@ -166,18 +180,32 @@ url = "schedule/"
 weight = 5
 
     [[menu.main]]
-    identifier = "keynotes"
+    identifier = "b2b-dynamics"
     parent = "schedule"
-    name = "Keynotes"
-    url = "keynotes/"
+    name = "B2B Dynamics"
+    url = "b2b-dynamics/"
     weight = 1
 
     [[menu.main]]
-    identifier = "b2b"
+    identifier = "geochicas"
     parent = "schedule"
-    name = "B2B"
-    url = "B2B/"
+    name = "GeoChicas & Meninas da Geo"
+    url = "geochicas-meninas-da-geo/"
     weight = 2
+
+    [[menu.main]]
+    identifier = "community-sprint"
+    parent = "schedule"
+    name = "Community Sprint"
+    url = "community-sprint/"
+    weight = 3
+
+    [[menu.main]]
+    identifier = "social-events"
+    parent = "schedule"
+    name = "Social Events"
+    url = "social-events/"
+    weight = 4
 
 [[menu.main]]
 identifier = "sponsors"
@@ -192,19 +220,39 @@ url = "attending/"
 weight = 7
 
     [[menu.main]]
+    identifier = "venue"
+    parent = "attending"
+    name = "Venue"
+    url = "venue/"
+    weight = 1
+
+    [[menu.main]]
     identifier = "getting-to-belem"
     parent = "attending"
     name = "Getting to Belém"
     url = "getting-to-belem/"
-    weight = 1
+    weight = 2
+    
+    [[menu.main]]
+    identifier = "accommodation"
+    parent = "attending"
+    name = "Accommodation"
+    url = "accommodation/"
+    weight = 3
 
     [[menu.main]]
     identifier = "guided-tours"
     parent = "attending"
     name = "Guided Tours"
     url = "guided-tours/"
-    weight = 2
+    weight = 4
 
+    [[menu.main]]
+    identifier = "what-to-do"
+    parent = "attending"
+    name = "What to do in Belém"
+    url = "what-to-do-in-belem/"
+    weight = 5
 
 
 #################### default parameters ################################
@@ -239,7 +287,7 @@ link = "call-for-papers/"
 # google map
 [params.map]
 enable = true
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+#gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
 map_latitude = "-1.42168"
 map_longitude = "-48.45677"
 map_marker = "images/marker.png"
