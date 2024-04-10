@@ -287,7 +287,7 @@ link = "call-for-papers/"
 # google map
 [params.map]
 enable = true
-gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
+#gmap_api = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"
 map_latitude = "-1.42168"
 map_longitude = "-48.45677"
 map_marker = "images/marker.png"
