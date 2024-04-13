@@ -8,6 +8,7 @@ layout : "faq"
 ---
 
 
+#### General Questions
 {{< faq "When and where is the conference?" >}}
 The conference will take place from December 2 to December 8, 2024 in Belém do Pará, Brazil. It will take place in two spaces: Hangar and the Instituto Federal de Educação, Ciência e Tecnologia do Pará (IFPA)
 {{</ faq >}}
@@ -33,9 +34,10 @@ The conference will have Plenary Talks, academic track, specific track, workshop
 {{</ faq >}}
 
 {{< faq "How to get to Belém do Pará?" >}}
-To get to Belém do Pará in Brazil, you can consider several means of transportation, depending on your exact location and preferences. We invite you to go to the "Getting to Belém" page, where you can find more information.
+To get to Belém do Pará in Brazil, you can consider several means of transportation, depending on your exact location and preferences. We invite you to go to the **"Getting to Belém"** page, where you can find more information.
 {{</ faq >}}
 
+#### Registration Questions
 <!-- REGISTRATION QUESTIONS -->
 
 {{< faq "Can I go without registering?" >}}
@@ -75,17 +77,18 @@ All participants will receive a complimentary bottle of water and a tote bag, an
 {{</ faq >}}
 
 {{< faq "Can I purchase additional products?" >}}
-Yes, the idea is that in addition to obtaining these items with the ticket, you can buy some additional products, and the money raised will go to the TGP.
+Yes, the idea is that in addition to obtaining these items with the ticket, you can buy some additional products, and the money raised will go to the TGP. <ul style="margin-top: 6px; margin-bottom: 0"><li>[RedBubble](https://www.redbubble.com/people/FOSS4G2024/)</li><li>[CafePress](https://www.cafepress.com/shop/FOSS4G2024)<ul>
 {{</ faq >}}
 
 {{< faq "Unexpected cancellation of the event or inability to carry it out" >}}
 In the unlikely event that FOSS4G 2024 cannot be held in whole or in part due to any event beyond the control of the Organizers or force majeure (such as riots, fires, explosions, accidents, floods, earthquakes, sabotage, strikes, pandemic, acts of any government, etc.) the Conference Organizers are not responsible for any damage, cost or loss incurred such as registration fee or any other direct or indirect loss or consequential damage.
 {{</ faq >}}
 
+#### Accommodation Questions
 <!-- ACCOMMODATION QUESTIONS -->
 
 {{< faq "Are food and lodging included in professional and corporate registration fees?" >}}
-Accommodation must be booked and paid for separately, but food is included in the registration fee. To see more information about where you can find accommodation, check out the "Accommodation" page
+Accommodation must be booked and paid for separately, but food is included in the registration fee. To see more information about where you can find accommodation, check out the **"Accommodation"** page
 {{</ faq >}}
 
 {{< faq "I have someone accompanying me, do they need to register as well?" >}}
@@ -100,7 +103,7 @@ From the International Airport to the center of Belém, it is 9 km, by car 22 mi
 <!-- OTHER QUESTIONS -->
 
 {{< faq "Where can I find a map of the place and its surroundings?" >}}
-You can find a map of the facilities and surrounding area here: <a href="https://umap.openstreetmap.fr/pt-br/map/foss4g-2024_1036152#13/-1.4521/-48.4478" target="_blank">MAPA</a>. You can also go to the venue page
+You can find a map of the facilities and surrounding area here: <a href="https://umap.openstreetmap.fr/pt-br/map/foss4g-2024_1036152#13/-1.4521/-48.4478" target="_blank">MAPA</a>. You can also go to the **"Venue"** page
 {{</ faq >}}
 
 {{< faq "What are the payment options at local stores and restaurants?" >}}
@@ -113,7 +116,4 @@ No, the water that reaches the Belém tap is not drinkable. It is recommended to
 
 {{< faq "What are the suggested restaurants and pubs in Belem?" >}}
 Some of the best restaurants and pubs in Belém can be found <a href="https://www.tripadvisor.com/Restaurants-g303404-zfg11776-Belem_State_of_Para.html" target="_blank">here</a>, according to TripAdvisor.
-{{</ faq >}}
-
-{{< faq "" >}}
 {{</ faq >}}

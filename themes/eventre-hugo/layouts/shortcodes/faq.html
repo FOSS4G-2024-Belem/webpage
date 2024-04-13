@@ -4,12 +4,15 @@
   <!-- Collapse -->
   <div class="card">
     <!-- Collapse Header -->
-    <div class="card-header" id="headingOne">
-      <h5 class="mb-0">
-        <a href="#">
-          <span class="fa fa-circle-question"></span>{{ .Get 0 | markdownify }}
-        </a>
-      </h5>
+    <div class="card-header" style="background: rgba(0,0,0,0.08)" id="headingOne">
+      <table><tbody>
+        <tr>
+          <td style="padding: 10px 16px;">
+            <span style="font-size: 1.2rem;" class="fa fa-circle-question"></span>
+          </td>
+          <td style="padding: 10px; font-size: 1.2rem">{{ .Get 0 | markdownify }}</td>
+        </tr></tbody>
+      </table>
     </div>
     <!-- Collapse Body -->
     <div id="{{ .Get 0 | anchorize }}" data-parent="#accordion">
