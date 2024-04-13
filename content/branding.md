@@ -1,4 +1,4 @@
 ---
 title: "Branding"
-layout: "single"
+layout: "branding"
 ---
