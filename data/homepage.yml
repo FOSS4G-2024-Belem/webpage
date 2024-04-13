@@ -3,7 +3,7 @@ banner:
   enable : true
   heading : "FOSS4G 2024"
   heading_2 : "Belém, Brasil"
-  content : "02-08 December 2024 Belém"
+  content : "02-08 December 2024"
   timer:
     enable : true
     year : 2024
@@ -18,12 +18,15 @@ banner:
 about:
   enable : true
   title : "About FOSS4G"
-  content : "Organized by OSGeo and with more than 15 years of experience, this international annual gathering of location enthusiasts is the largest global gathering for geospatial software. <br><br>
-FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation. Through seven days of workshops, presentations, discussions, and cooperation, FOSS4G participants create effective and relevant geospatial products, standards, and protocols."
+  content : "Join the fascinating world of the FOSS4G international conference, where innovation and collaboration converge to drive the future of geoinformation.
+  At this unmissable event, leaders and enthusiasts of geospatial technology come together to explore the latest trends in open source software.<br/><br/>
+  Discover how the powerful combination of open source freedom and geoinformatics is transforming the way we visualize, analyze, and understand our world.
+  Don't miss the opportunity to be part of this cartographic revolution!
+"
   button_solid:
     enable : true
-    label : "Buy ticket"
-    link : "registration/"
+    label : "Learn More"
+    link : "about/"
   button_outline:
     enable : false
     label : "Read more"

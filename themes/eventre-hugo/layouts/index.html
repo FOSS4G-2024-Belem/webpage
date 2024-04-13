@@ -18,8 +18,9 @@
 					{{ end }}
 					{{ end }}
 					{{with .heading}}<h1>{{ . | markdownify }}</h1>{{end}}
-					{{with .heading_2}}<h2>{{ . | markdownify }}</h2>{{end}}
-					<h6>{{ .content | markdownify }}</h6>
+					{{with .heading_2}}<h2>{{ . | markdownify }}{{end}}</h2>
+					<div style="font-size: 1.2rem; color: #fff">{{ .content | markdownify }}</div>
+					<h6 style="margin-top: 1rem; font-size: 1.3rem; max-width: 600px; line-height: 1.4; font-style: italic">"In the heart of the Amazon, Belém, geospatial technology transcends borders, revealing a map of unlimited possibilities"</h6>
 					<!-- Action Button -->
 					{{ if .button.enable }}
 					{{ with .button }}
@@ -27,6 +28,7 @@
 					{{ end }}
 					{{ end }}
 				</div>
+				<div>
 			</div>
 		</div>
 	</div>
