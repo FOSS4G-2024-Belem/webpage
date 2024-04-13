@@ -216,7 +216,7 @@ weight = 6
 [[menu.main]]
 identifier = "attending"
 name = "Attending"
-url = "attending/"
+url = "#"
 weight = 7
 
     [[menu.main]]

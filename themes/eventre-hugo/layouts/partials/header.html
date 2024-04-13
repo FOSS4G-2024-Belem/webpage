@@ -20,9 +20,13 @@
         {{ range site.Menus.main }}
         {{ if .HasChildren }}
         <li class="nav-item dropdown dropdown-slide">
-          <a class="nav-link" href="#" data-toggle="dropdown">{{.Name}}
-            <span>/</span>
+          {{ if eq .URL "#" }}
+          <a class="nav-link" href="#">{{.Name}}<span>|</span></a>
+          {{ else }}
+          <a class="nav-link" href="{{.URL | absURL}}">{{.Name}}
+            <span>|</span>
           </a>
+          {{ end }}
           <!-- Dropdown list -->
           <div class="dropdown-menu">
             {{ range .Children }}
@@ -35,7 +39,7 @@
         <li class="nav-item">
           <a class="nav-link"
             href="{{if .Pre}}{{site.BaseURL | absLangURL}}{{.Pre}}{{ .URL }}{{else}}{{.URL | absLangURL}}{{end}}">{{.Name}}
-            <span>/</span>
+            <span>|</span>
           </a>
         </li>
         {{ end }}
