@@ -3,7 +3,7 @@ title: "Code of Conduct"
 layout: "single"
 ---
 
-## Code of Conduct
+## What is a Code of Conduct?
 
 This code of conduct governs how we conduct ourselves in any OSGeo forum or event and we will always be responsible for our actions and words. This event has zero tolerance in relation to discrimination, harassment, hate speech, or any other type of act that may intimidate or in any way put at risk the physical, psychological or emotional integrity of the participants. We hope you will be honored by everyone who participates in our event.
 
