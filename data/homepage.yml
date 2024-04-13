@@ -90,9 +90,9 @@ promote:
 
 ################# Final texts ###################
 finaltext:
-  enable: false
-  titleSection : "Título de Sección"
-  title1 : "Titulo 1"
+  enable: true
+  titleSection : "Sponsors"
+  title1 : "Organizers"
   content1 : "Texto y Párrafo 1"
-  title2 : "Título 2"
+  title2 : "Community Partners"
   content2 : "Texto y Párrafo 2"
