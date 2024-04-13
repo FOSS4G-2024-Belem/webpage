@@ -46,44 +46,43 @@ register:
 latest:
   enable: true
   title : "Latest news"
-  content : "Organized by OSGeo and with more than 15 years of experience, this international annual gathering of location enthusiasts is the largest global gathering for geospatial software.<br><br>
-FOSS4G brings together developers, users, decision-makers and observers from a broad spectrum of organizations and fields of operation. Through seven days of workshops, presentations, discussions, and cooperation, FOSS4G participants create effective and relevant geospatial products, standards, and protocols."
+  content : "Find out about all the news in this section!"
 
 # Card 1
-  card1Title: "Título Card 1"
-  card1Text: "Texto Card 1"
+  card1Title: "FOSS4G in Belém!"
+  card1Text: "OSGeo announces that the FOSS4G international conference will be held in Belém"
   card1Link: 
     enable: true
-    link: "/"
+    link: "https://www.osgeo.org/foundation-news/foss4g-2024-has-been-awarded-to-belem-brazil/"
     label: "Show More"
-  card1Image: "images/cards/card1.png"
+  card1Image: "images/foss4g-2024-announced.jpg"
 
 # Card 2
-  card2Title: "Título Card 2"
-  card2Text: "Texto Card 2"
+  card2Title: "SOTM Latam"
+  card2Text: "State of the Map LATAM will be held in Belém 07-08 December, after the main conference!"
   card2Link: 
     enable: true
-    link: "/"
+    link: "https://wiki.openstreetmap.org/wiki/ES:LatAm/Eventos/State_of_the_Map_Latam_2024"
     label: "Show More"
-  card2Image: "images/cards/card1.png"
+  card2Image: "images/sotm-generic.png"
 
 # Card 3
-  card3Title: "Título Card 3"
-  card3Text: "Texto Card 3"
+  card3Title: "FOSS4G Venue Chosen"
+  card3Text: "FOSS4G 2024 Belém will be held at HANGAR Convention Center!"
   card3Link: 
     enable: true
-    link: "/"
+    link: "https://hangarpa.com.br/"
     label: "Show More"
-  card3Image: "images/cards/card1.png"
+  card3Image: "images/hangar.jpg"
 
 ################# Promote ###################
 promote:
   enable: true
-  title : "A little text to become a partner or promote something specific about the event."
+  title : "Do you want to become our sponsor? Join us as an essential partner in this technological journey!"
   button_solid:
     enable : true
-    label : "Join Today"
-    link : "pricing/"
+    label : "Sponsor Brochure"
+    link : "/"
   button_outline:
     enable : true
     label : "Contact Us"
