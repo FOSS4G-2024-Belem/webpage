@@ -13,6 +13,9 @@
 	.speakers.white .speaker-item:hover {
 		box-shadow: none; 
 	}
+	.section.speakers {
+		padding: 0;
+	}
 	.speakers.white .image {
   		border: double 6px transparent;
   		border-radius: 50%;
@@ -29,6 +32,13 @@
 	.image a img:hover {
 		transform: scale(110%);
 		transition: all .5s ease;
+	}
+	.row {
+		padding-bottom: 0;
+	}
+
+	.section-title {
+		margin: 10px 0;
 	}
 </style>
 
@@ -49,14 +59,14 @@
 		<div class="row">
 
 			{{ range .Site.Data.committees.loc }}
-			<div class="col-lg-3 col-md-4 col-sm-6">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
 				<!-- Speaker 1 -->
 				<div class="speaker-item">
 					<div class="image">
 						<img src="{{ "images/committee/loc/" | absURL }}{{  . | urlize }}.jpg" alt="{{ . }}" class="img-fluid">
 					</div>
 					<div class="content text-center">
-						<h5>{{ . }}</h5>
+						<h6>{{ . }}</h6>
 					</div>
 				</div>
 				</div>
@@ -70,21 +80,21 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-12" style="font-size: 1.2rem">
+			<div class="col-12" style="font-size: 1.1rem">
 				At the heart of every successful conference lies a dedicated and enthusiastic team: the program creation committee. This group of professionals and volunteers carefully curates every detail, fusing innovation with experience to offer a better version for attendees. Their work not only translates into the diversity of topics addressed, but also in the careful selection of speakers and panels that will inspire, inform and connect participants. Their tireless dedication is the cornerstone that elevates each edition of the conference to new heights.
 			</div>
 		</div>
 		<div class="row">
 
 			{{ range .Site.Data.committees.program }}
-			<div class="col-lg-3 col-md-4 col-sm-6">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
 				<!-- Speaker 1 -->
 				<div class="speaker-item">
 					<div class="image">
 						<img src="{{ "images/committee/program/" | absURL }}{{  . | urlize }}.jpg" alt="{{ . }}" class="img-fluid">
 					</div>
 					<div class="content text-center">
-						<h5>{{ . }}</h5>
+						<h6>{{ . }}</h6>
 					</div>
 				</div>
 				</div>
@@ -100,21 +110,21 @@
 		</div>
 
 		<div class="row">
-			<div class="col-12" style="font-size: 1.2rem">
+			<div class="col-12" style="font-size: 1.1rem">
 				The Academic Committee is the backbone that ensures its excellence and relevance. This group of experts plays a fundamental role in ensuring the quality and academic rigor of the designated track. Their work goes beyond reviewing proposals and selecting speakers; They are responsible for ensuring that each presentation and session reflects the latest research, advances and trends in the field. The Academic Committee not only validates the content, but also encourages interdisciplinarity and diversity of perspectives, thus building a track that promotes and drives progress in the academic community.
 			</div>
 		</div>
 		<div class="row">
 
 			{{ range .Site.Data.committees.academic }}
-			<div class="col-lg-3 col-md-4 col-sm-6">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
 				<!-- Speaker 1 -->
 				<div class="speaker-item">
 					<div class="image">
 						<img src="{{ "images/committee/academic/" | absURL }}{{  . | urlize }}.jpg" alt="{{ . }}" class="img-fluid">
 					</div>
 					<div class="content text-center">
-						<h5>{{ . }}</h5>
+						<h6>{{ . }}</h6>
 					</div>
 				</div>
 				</div>
@@ -130,14 +140,14 @@
 		<div class="row">
 
 			{{ range .Site.Data.committees.sponsor }}
-			<div class="col-lg-3 col-md-4 col-sm-6">
+			<div class="col-lg-3 col-md-4 col-sm-6 col-6">
 				<!-- Speaker 1 -->
 				<div class="speaker-item">
 					<div class="image">
 						<img src="{{ "images/committee/sponsor/" | absURL }}{{  . | urlize }}.jpg" alt="{{ . }}" class="img-fluid">
 					</div>
 					<div class="content text-center">
-						<h5>{{ . }}</h5>
+						<h6>{{ . }}</h6>
 					</div>
 				</div>
 				</div>
