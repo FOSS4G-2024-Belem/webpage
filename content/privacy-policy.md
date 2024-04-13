@@ -9,5 +9,5 @@ This data is used to collect relevant statistics about events, which allow us to
 
 Personal information is protected by LAW N° 13,709, OF AUGUST 14, 2018 - General Law on Protection of Personal Data - LGPD in force in Brazil.
 
-Third party access
+#### Third party access
 You should note that personal information will not be disclosed to third parties.

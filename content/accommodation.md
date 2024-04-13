@@ -3,9 +3,21 @@ title: "Accommodation"
 layout: "single"
 ---
 
+<style>
+.imgz {
+  width: 60%;
+  margin: 20px auto;
+  min-width: 320px;
+}
+</style>
+
 Belém, the charming city at the mouth of the Amazon River, has a variety of neighborhoods that offer different experiences for visitors. Here we present a list of the 6 best neighborhoods to stay, according to amenities, accessibility and attractions:
 
 #### Batista Campos
+<div class="imgz">
+{{< img "images/barrio-batista-campos.jpg" >}}
+</div>
+
 Located in the center of the city, it is known for its tree-lined streets and peaceful atmosphere.
 Accommodation prices: From 30 to 100 USD per night, depending on the type of accommodation (hostels, boutique hotels).
 
@@ -13,6 +25,11 @@ Accommodation prices: From 30 to 100 USD per night, depending on the type of acc
 - ibis Styles Belém do Pará: USD 84 por noche. 
 
 #### Nazareth
+
+<div class="imgz">
+{{< img "images/fuerte-do-castelo.jpg" >}}
+</div>
+
 Belém, the charming city at the mouth of the Amazon River, has a variety of neighborhoods that offer different experiences for visitors. Here we present a list of the 6 best neighborhoods to stay, according to amenities, accessibility and attractions:
 
 - ibis Styles Belem Nazaré: USD 62 per night

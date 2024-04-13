@@ -1,0 +1,60 @@
+{{ define "main"}}
+
+<style>
+	.section.branding {
+		padding: 0;
+	}
+
+	h4 {
+		margin: 0 15px;
+		padding: 10px 0;
+	}
+
+	.row.logo {
+		margin-right: 0px !important;
+
+		margin-left: 0px !important;
+		max-width: 100%;
+	}
+
+	.row.logo img {
+		margin: 6px;
+		max-width: calc(100% - 12px);
+	}
+
+	.row.logo>div {
+		margin-top: 6px;
+		padding: 12px;
+	}
+</style>
+<section class="section branding">
+	<div class="container">
+		<div class="">
+			<div class="row">
+				<h4>Branding Guidelines PDF</h4>
+				<iframe class="pdf" src="{{ "foss4g-2024-branding-guidelines.pdf" | absURL }}" width="100%"
+					height="760"></iframe>
+			</div>
+			<div class="row">
+				<h4>Logos</h4>
+			</div>
+			<div class="row logo">
+				<div class="col-sm-6 col-12" style="background: #552f27; border-radius: 12px;">
+					<img src="{{ "images/logo/logo-horizontal-white.png" | absURL }}" />
+				</div>
+				<div class="col-sm-6 col-12">
+					<img src="{{ "images/logo/logo-horizontal.png" | absURL }}" />
+				</div>
+				<div class="col-sm-6 col-12" style="background: #552f27;  border-radius: 12px;">
+					<img src="{{ "images/logo/logo-vertical-white.png" | absURL }}" />
+				</div>
+				<div class="col-sm-6 col-12">
+					<img src="{{ "images/logo/logo-vertical.png" | absURL }}" />
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+{{ end }}

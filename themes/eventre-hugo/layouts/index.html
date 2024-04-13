@@ -18,8 +18,9 @@
 					{{ end }}
 					{{ end }}
 					{{with .heading}}<h1>{{ . | markdownify }}</h1>{{end}}
-					{{with .heading_2}}<h2>{{ . | markdownify }}</h2>{{end}}
-					<h6>{{ .content | markdownify }}</h6>
+					{{with .heading_2}}<h2>{{ . | markdownify }}{{end}}</h2>
+					<div style="font-size: 1.2rem; color: #fff">{{ .content | markdownify }}</div>
+					<h6 style="margin-top: 1rem; font-size: 1.3rem; max-width: 600px; line-height: 1.4; font-style: italic">"In the heart of the Amazon, Belém, geospatial technology transcends borders, revealing a map of unlimited possibilities..."</h6>
 					<!-- Action Button -->
 					{{ if .button.enable }}
 					{{ with .button }}
@@ -27,6 +28,7 @@
 					{{ end }}
 					{{ end }}
 				</div>
+				<div>
 			</div>
 		</div>
 	</div>
@@ -203,7 +205,7 @@
 										margin-top: 20px;
 										padding: 20px;
 										">
-				<h2>Register to the event</h2>
+				<h2>Register for the event</h2>
 			</div>
 		</div>
 		<div class="row">
@@ -211,15 +213,14 @@
 				<img src="{{ "images/flechas_blanco.png" | absURL }}" style="transform: rotate(-90deg);" alt="">
 			</div>
 			<div class="col-md-4" style="padding: 0; text-align: center;">
-				<a href="{{ .link1 | absURL }}" class="btn btn-main-md">Register Now</a>
+				<a class="btn btn-main-md" style="word-wrap: none; min-width: 280px"><span style="display: none;color: rgba(0,0,0,0.3); font-style: italic; text-decoration: line-through;">Register Now</span>Coming soon!</a>
 			</div>
 		</div>
 	</div>
 
 	<div class="registerItem">
-		<a href="{{ .link2 | absURL }}">
-			<h3>Workshops</h3>
-			<p>See all here</p>
+		<a href="{{ "code-of-conduct/" | absURL }}">
+			<h3>Code of Conduct</h3>
 		</a>
 	</div>
 
@@ -235,8 +236,8 @@
 
 	<div class="registerItem">
 		<a href="{{ .link4 | absURL }}">
-			<h3>Program</h3>
-			<p>A wonderful opportunity for networking</p>
+			<h3>Schedule</h3>
+			<!-- <p>A wonderful opportunity for networking</p> -->
 		</a>
 	</div>
 
@@ -313,13 +314,13 @@
 			<div class="col-md-4 offset-lg-7">
 				<div class="card">
 					<div class="card-block">
-						<div class="cardImage" style="background: url('{{ .card1Image | absURL}}');"></div>
+						<div class="cardImage" style="background-size: contain !important; background-repeat: no-repeat !important; background: url('{{ .card1Image | absURL}}');"></div>
 						<div class="cardContent">
 							<h4 class="card-title">{{.card1Title | markdownify}}</h4>
 							<p class="card-text p-y-1">{{.card1Text | markdownify}}</p>
 							{{ if .card1Link.enable }}
 							{{ with .card1Link }}
-								<a href="{{ .link | absURL }}">{{.label}}</a>
+								<a href="{{ .link | absURL }}" target="_blank">{{.label}}</a>
 							{{ end }}
 							{{ end }}
 						</div>
@@ -330,13 +331,13 @@
 			<div class="col-md-4 offset-lg-3">
 				<div class="card cardMiddle">
 					<div class="card-block">
-						<div class="cardImage" style="background: url('{{ .card2Image | absURL}}');"></div>
+						<div class="cardImage" style="background-size: contain !important; background-repeat: no-repeat !important; background: url('{{ .card2Image | absURL}}');"></div>
 						<div class="cardContent">
 							<h4 class="card-title">{{.card2Title | markdownify}}</h4>
 							<p class="card-text p-y-1">{{.card2Text | markdownify}}</p>
 							{{ if .card2Link.enable }}
 							{{ with .card2Link }}
-								<a href="{{ .link | absURL }}">{{.label}}</a>
+								<a href="{{ .link | absURL }}" target="_blank">{{.label}}</a>
 							{{ end }}
 							{{ end }}
 						</div>
@@ -353,7 +354,7 @@
 							<p class="card-text p-y-1">{{.card3Text | markdownify}}</p>
 							{{ if .card3Link.enable }}
 							{{ with .card3Link }}
-								<a href="{{ .link | absURL }}">{{.label}}</a>
+								<a href="{{ .link | absURL }}" target="_blank">{{.label}}</a>
 							{{ end }}
 							{{ end }}
 						</div>
@@ -423,7 +424,7 @@
 					{{ if .button_outline.enable }}
 					{{ with .button_outline }}
 					<li class="list-group-item">
-						<a href="{{ .link | absURL }}" class="btn btn-transparent-md">{{.label}}</a>
+						<a href="mailto:sponsors@foss4g.org" class="btn btn-transparent-md">{{.label}}</a>
 					</li>
 					{{ end }}
 					{{ end }}
@@ -441,20 +442,44 @@
 ===============================-->
 
 <style>
+ .logosx {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 18px 0;
+ }
 
+ .logosx > div {
+	display: block;
+	margin: 22px 0;
+ }
+
+ .logosx > div > img {
+	max-width: 200px;
+ }
+ .finaltext {
+	padding-bottom: 0 !important;
+ }
 </style>
 
 {{ if site.Data.homepage.finaltext.enable }}
 {{ with site.Data.homepage.finaltext }}
 <section class="section finaltext">
-	<div class="container">
+	<div class="container final">
 
-		<h2 style="font-weight: 400;">{{.titleSection | markdownify}}</h2>
 
-		<h3 style="color: #D86E39; font-weight: 500;">{{.title1 | markdownify}}</h3>
-		<p>{{ .content1 | markdownify}}</p>
-		<h3 style="color: #A6BF64; font-weight: 500;">{{.title2 | markdownify}}</h3>
-		<p>{{ .content2 | markdownify}}</p>
+		<h3 style="font-weight: 500;">{{.title1 | markdownify}}</h3>
+		<div class="logosx">
+			<div><img src="{{ "images/osgeo-logo.png" | absURL }}" /></div>
+			<div><img src="{{ "images/osgeo-brasil.png" | absURL }}" /></div>
+			<div><img src="{{ "images/geolibres.png" | absURL }}" /></div>
+		</div>
+		<h3 style="font-weight: 500;">{{.title2 | markdownify}}</h3>
+		<div class="logosx">
+			<div><img src="{{ "images/geochicas.png" | absURL }}" /></div>
+			<div><img src="{{ "images/meninas-da-geo.png" | absURL }}" /></div>
+		</div>
 		
 	</div>
 </section>

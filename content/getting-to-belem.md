@@ -7,6 +7,8 @@ layout: "single"
 
 #### By Air
 
+{{< img "images/belem-aeropuerto.jpg" >}}
+
 [Val de Cães (BEL) International Airport](https://en.wikipedia.org/wiki/Bel%C3%A9m/Val-de-Cans_International_Airport) is a medium-sized international airport in Brazil. 
 
 For people coming from outside Brazil, there are 4 regular non-stop flights to and from BEL:

@@ -156,7 +156,7 @@ weight = 2
 [[menu.main]]
 identifier = "registration"
 name = "Regstration"
-url = "regstration/"
+url = "#"
 weight = 5
 
     [[menu.main]]
@@ -216,7 +216,7 @@ weight = 6
 [[menu.main]]
 identifier = "attending"
 name = "Attending"
-url = "attending/"
+url = "#"
 weight = 7
 
     [[menu.main]]
@@ -293,7 +293,7 @@ map_longitude = "-48.45677"
 map_marker = "images/marker.png"
 name = "Hangar - Convention Center, Belem, PA, Brazil."
 location = "Dr. Freitas Avenue - Marco, Belem - PA, 66613-902, Brazil"
-email = "foss4g2024@gmail.com "
+email = "info@foss4g.org"
 link = "https://hangarpa.com.br/"
 
 # cookies
