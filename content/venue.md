@@ -10,11 +10,11 @@ layout: "single"
 Here are the locations at which various events in the conference will be held:
 
 - Hangar Convenções & Feiras da Amazônia Belém
-  - Hangar Infrastructure*
+  - Hangar Infrastructure <b style="font-size: 1.2rem">*</b>
   - Registration Desk
   - Opening 
-  - Violet room (safety point)*
-  - Exhibition Area*
+  - Violet room (safety point) <b style="font-size: 1.2rem">*</b>
+  - Exhibition Area <b style="font-size: 1.2rem">*</b>
   - Catering Area 
   - Main Sessions
   - AGM OSGeo
@@ -22,7 +22,7 @@ Here are the locations at which various events in the conference will be held:
   - Gala Dinner
   - Closing
 - Instituto Federal do Pará - IFPA (Pará’s Federal Institute)
-  - IFPA Infrastructure*
+  - IFPA Infrastructure <b style="font-size: 1.2rem">*</b>
   - Workshops 
   - CodeSprint 
 - Beira-Rio Hotel

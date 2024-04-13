@@ -12,7 +12,7 @@ The TGP is provided by OSGeo and managed by members of the Belém LOC (LOC). App
 
 The scholarship applies to countries in Latin America and the Caribbean.
 
-**Registration Form (coming soon)**
+##### **Registration Form (coming soon)**
 
 The travel grant will include a round-trip ticket, secondly you can request a smaller subsidy for a conference ticket (including 1 workshop).
 
@@ -38,13 +38,10 @@ The allocation of points is based on the ECLAC classification, population in pov
 
 [https://statistics.cepal.org/portal/cepalstat/index.html?lang=es](https://statistics.cepal.org/portal/cepalstat/index.html?lang=es)
 
-Applicants who currently live in administrative divisions with poverty % greater than or equal to 60% receive 1.5 points.
-
-Applicants who currently live in administrative divisions with poverty % between 45 - 59.9% receive 1 point.
-
-Applicants who currently live in administrative divisions with poverty % between 30 - 44.9% receive 0.5 points.
-
-Applicants who currently live in administrative divisions with poverty % between 0 - 29.9% receive 0 points.
+- Applicants who currently live in administrative divisions with poverty % greater than or equal to 60% receive 1.5 points.
+- Applicants who currently live in administrative divisions with poverty % between 45 - 59.9% receive 1 point.
+- Applicants who currently live in administrative divisions with poverty % between 30 - 44.9% receive 0.5 points.
+- Applicants who currently live in administrative divisions with poverty % between 0 - 29.9% receive 0 points.
 
 #### Gender and minorities
 

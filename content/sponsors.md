@@ -1,14 +1,15 @@
 ---
 title: "Why becoming a sponsor?"
-subtitle: "Sub-headline comes here"
-description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores, velit."
+subtitle: "Highlight your brand at the epicenter of geospatial innovation!"
+description: "Become a sponsor of FOSS4G and place your company at the center of the technological revolution. Join us to enhance your visibility and connect with industry leaders. Adventure with us leads to a geospatial future without limits!
+"
 
 button_solid:
     enable: true
     link: "/"
-    label: "Button"
+    label: "Sponsor Brochure"
 button_outline:
-    enable: true
+    enable: false
     link: "/"
     label: "Button"
 draft: false

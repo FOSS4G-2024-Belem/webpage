@@ -7,6 +7,18 @@ Colleagues! The excitement doesn’t end in the auditorium! We extend a warm inv
 
 #### IceBreaker
 
+<style>
+  .imgz {
+    margin: 20px auto;
+    width: 63%;
+    min-width: 320px;
+  }
+</style>
+
+<div class="imgz">
+{{< img "images/hangar2.jpg"  >}}
+</div>
+
 IceBreaker will take place on the first day of the event, on **Wednesday, December 4th, from 6:30 pm to 9:00 pm**, in the same location, HANGAR, and will allow participants to have a relaxed moment with music and a small cocktail to promote conviviality between people.
 
 #### Gala Dinner
@@ -20,5 +32,4 @@ We want to involve participants in the culture of Pará and make them taste the 
 
 #### Closing Reception
 
-We invite you to celebrate the closing of the FOSS4G 2024 conference at a special reception! Come and toast a week of learning, networking and collaboration with the FOSS4G community. All members of the FOSS4G association, friends and interested parties are cordially invited for a drink at the end of FOSS4G 2024 from 3:30 pm in the same location, HANGAR.
-
+We invite you to celebrate the closing of the FOSS4G 2024 conference at a special reception! Come and toast a week of learning, networking and collaboration with the FOSS4G community. All members of the FOSS4G association, friends and interested parties are cordially invited for a drink at the end of FOSS4G 2024 on **Friday, December 6th, at 3:30 pm in the same location, HANGAR**.
