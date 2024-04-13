@@ -7,8 +7,6 @@ draft : false
 layout : "faq"
 ---
 
-<div style="display: block"><h2>## General Questions</h2></div>
-
 
 {{< faq "When and where is the conference?" >}}
 The conference will take place from December 2 to December 8, 2024 in Belém do Pará, Brazil. It will take place in two spaces: Hangar and the Instituto Federal de Educação, Ciência e Tecnologia do Pará (IFPA)
