@@ -54,6 +54,9 @@ A safe place managed by event organizers will be provided, where they can come t
 The processing and information will be treated with due data protection and anonymously in any case.
 
 ##### Exhibition Area
+
+{{< img2 "images/hangar-layout.png" >}}
+
 The Exhibition Area, where you can find our sponsors and partners, is at the Main Building.
 
 ##### Conference Badge
