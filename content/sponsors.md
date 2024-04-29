@@ -6,7 +6,7 @@ description: "Become a sponsor of FOSS4G and place your company at the center of
 
 button_solid:
     enable: true
-    link: "/"
+    link: "foss4g-2024-sponsor-brochure.pdf"
     label: "Sponsor Brochure"
 button_outline:
     enable: false
