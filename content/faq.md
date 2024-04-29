@@ -45,7 +45,10 @@ The event will only be accessible to registered users.
 {{</ faq >}}
 
 {{< faq "What types of tickets will exist?" >}}
-There will be different ticket prices depending on your place of residence: Brazil (LOC), Argentina (LOC linebacker), Countries of Latin America and the Caribbean (Regional), Countries that do not include Latin America and the Caribbean (International)
+There will be different ticket prices depending on your place of residence:
+- Brazil &amp; Argentina (LOC)
+- Countries of Latin America and the Caribbean (Regional)
+- Countries that do not include Latin America and the Caribbean (International)
 {{</ faq >}}
 
 {{< faq "What is included in the ticket?" >}}
