@@ -42,6 +42,31 @@ loc:
   - name: Luiz Motta
     role: Articulador com Governo
 
+program:
+  - name: Rodrigo Smarzaro
+    role:
+  - name: Walkiria Melo
+    role:
+  - name: Rosa Aguilar Bolivar
+    role:
+  - name: Leticia Claro
+    role:
+  - name: Carlos Grohman
+    role:
+  - name: Luca Delucchi
+    role:
+  - name: Danilo Melo
+    role:
+  - name: Patricia Alvez
+    role:
+  - name: Hermínio Sabino
+    role:
+  - name: Aline Graziedei
+    role:
+  - name: Helton Nogueira
+    role:
+  - name: Andrés Velástegui
+    role:
 
 academic:
 - Ana Carol Vizitim
@@ -56,16 +81,6 @@ academic:
 - Sergio Acosta y Lara
 - Tahisa Kuck
 - Vanessa Brum Bastos
-
-program:
-- Carlos Grohman
-- Carmen Diez
-- Leticia Claro
-- Miriam Gonzalez
-- Rodrigo Smarzaro
-- Rosa Aguilar Bolivar
-- Selene Yang
-- Walkiria Melo
 
 sponsor:
 - Horacio Castellaro
