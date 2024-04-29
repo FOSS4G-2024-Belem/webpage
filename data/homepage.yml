@@ -82,7 +82,7 @@ promote:
   button_solid:
     enable : true
     label : "Sponsor Brochure"
-    link : "/"
+    link : "foss4g-2024-sponsor-brochure.pdf"
   button_outline:
     enable : true
     label : "Contact Us"
