@@ -69,18 +69,42 @@ program:
     role:
 
 academic:
-- Ana Carol Vizitim
-- Ana Larissa de Freitas
-- Carlos Grohman
-- Denize Monteiro Dos Anjos
-- Gustavo Baptista
-- Leticia Claro
-- Patricia Alves
-- Patricia Iribarrem
-- Rodrigo Smarzaro
-- Sergio Acosta y Lara
-- Tahisa Kuck
-- Vanessa Brum Bastos
+  - name: Lubia Vinhas
+    role: 
+  - name: Ana Carol Vizitim
+    role: 
+  - name: Sergio Acosta y Lara
+    role: 
+  - name: Silvana Camboim
+    role: 
+  - name: Gustavo Baptista
+    role: 
+  - name: Jamer Andrade da Costa
+    role: 
+  - name: Patricia Alvez
+    role: 
+  - name: Tahisa Kuck
+    role: 
+  - name: Ana Larissa de Freitas
+    role: 
+  - name: Patricia Iribarrem
+    role: 
+  - name: Carlos Grohman
+    role: 
+  - name: Leticia Claro
+    role: 
+  - name: Denize Monteiro dos Anjos
+    role: 
+  - name: Vanessa Brum Bastos
+    role: 
+  - name: Andrés Velástegui
+    role: 
+  - name: Taíssa Caroline Silva Rodrigues
+    role: 
+  - name: Mariana Buzzi
+    role: 
+  - name: Gilberto Camara
+    role: 
 
 sponsor:
 - Horacio Castellaro
