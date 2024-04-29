@@ -84,7 +84,7 @@ The travel scholarship program is funded through:
 - Annual OSGeo Board Engagement
 - With the purchase of the ticket you get a cloth bag + a bottle of water, or some typical Belém item. By purchasing the ticket, you will have the possibility of purchasing a t-shirt or product, the benefits of which will go entirely to the TGP.
 - Money raised through FOSS4G merch on the following pages:
-  - [https://www.cafepress.com/profile/](https://www.cafepress.com/profile/)
+  - [https://www.cafepress.com/shop/FOSS4G2024](https://www.cafepress.com/shop/FOSS4G2024)
 - User donations (Founding). Voluntarily without compensation and that their names appear on a list on the website as a thank you or that they can opt for an online course/workshop/talk that does not involve much preparation work. depending on the amounts donated, online and prior to FOSS4G 2024.
 
 You can help make FOSS4G more accessible and increase the diversity of our attendees by making a donation to the FOSS4G TGP through the PayPal account of the local OSGeo Brazil chapter that manages the conference.
