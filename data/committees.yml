@@ -107,8 +107,13 @@ academic:
     role: 
 
 sponsor:
-- Horacio Castellaro
-- Leandro Franca
-- Luana
-- Steven Feldman
-- Walkiria Melo
+  - name: Horacio Castellaro
+    role: 
+  - name: Leandro Franca
+    role: 
+  - name: Luana
+    role: 
+  - name: Steven Feldman
+    role: 
+  - name: Walkiria Melo
+    role: 
