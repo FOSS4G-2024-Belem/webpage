@@ -1,3 +1,48 @@
+loc:
+  - name: Tatiana Pará
+    role: Conference Chair
+  - name: Andrea Trovant
+    role: Conference Co-Chair
+  - name: Ariel Anthieni
+    role: Logistic Committee
+  - name: Lubia Vinhas
+    role: Academic Track Chair
+  - name: Rodrigo Smarzaro
+    role: Program Chair
+  - name: Selene Yang
+    role: Diversity Team Chair
+  - name: Miriam Gonzalez
+    role: Diversity Team Co-Chair
+  - name: Carmen Diez
+    role: Diversity Team
+  - name: Narcélio De Sá Pereira
+    role: Communication Chair
+  - name: Sidney Schaberle Goveia
+    role: Communication Co-Chair
+  - name: Kauê de Moraes
+    role: Communication Team
+  - name: Carlos Tamasauskas
+    role: Fincance Committee
+  - name: George Porto Ferreira
+    role: Sponsorship Chair 
+  - name: Leandro França
+    role: Sponsorship Co-Chair 
+  - name: Horacio Castellaro
+    role: Sponsorship Team
+  - name: Felipe Barros
+    role: IT Team Chair
+  - name: Carlos Eduardo Mota
+    role: IT Team Co-Chair 
+  - name: Rami DV
+    role: IT Team 
+  - name: Walter Shilman
+    role: IT Team
+  - name: Martin Dell Oro
+    role: Communication Team
+  - name: Luiz Motta
+    role: Articulador com Governo
+
+
 academic:
 - Ana Carol Vizitim
 - Ana Larissa de Freitas
@@ -11,23 +56,6 @@ academic:
 - Sergio Acosta y Lara
 - Tahisa Kuck
 - Vanessa Brum Bastos
-
-loc:
-- Andrea Trovant
-- Ariel Anthieni
-- Carmen Diez
-- Felipe Barros
-- George Porto Ferreira
-- Gustavo Lopez
-- Horacio Castellaro
-- Julia Martinuzzi
-- Kauê de Moraes
-- Manuel Retamozo
-- Martin Dell Oro
-- Narcélio de Sá Pereira
-- Selene Yang
-- Tatiana Para
-- Walter Shilman
 
 program:
 - Carlos Grohman
