@@ -19,10 +19,13 @@ layout: "sponsors"
 
 organizer:
 - name: "Rearth"
-  logo : "images/logo/your-logo-here.png"
+  logo : "images/osgeo-logo.png"
   link : "#"
 - name: "Rearth"
-  logo : "images/logo/your-logo-here.png"
+  logo : "images/osgeo-brasil.png"
+  link : "#"
+- name: "Rearth"
+  logo : "images/geolibres.png"
   link : "#"
 
 diamond:

@@ -155,7 +155,7 @@ weight = 2
 
 [[menu.main]]
 identifier = "registration"
-name = "Regstration"
+name = "Registration"
 url = "#"
 weight = 5
 

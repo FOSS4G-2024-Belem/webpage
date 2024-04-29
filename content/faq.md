@@ -45,7 +45,10 @@ The event will only be accessible to registered users.
 {{</ faq >}}
 
 {{< faq "What types of tickets will exist?" >}}
-There will be different ticket prices depending on your place of residence: Brazil (LOC), Argentina (LOC linebacker), Countries of Latin America and the Caribbean (Regional), Countries that do not include Latin America and the Caribbean (International)
+There will be different ticket prices depending on your place of residence:
+- Brazil &amp; Argentina (LOC)
+- Countries of Latin America and the Caribbean (Regional)
+- Countries that do not include Latin America and the Caribbean (International)
 {{</ faq >}}
 
 {{< faq "What is included in the ticket?" >}}
@@ -77,7 +80,7 @@ All participants will receive a complimentary bottle of water and a tote bag, an
 {{</ faq >}}
 
 {{< faq "Can I purchase additional products?" >}}
-Yes, the idea is that in addition to obtaining these items with the ticket, you can buy some additional products, and the money raised will go to the TGP. <ul style="margin-top: 6px; margin-bottom: 0"><li>[RedBubble](https://www.redbubble.com/people/FOSS4G2024/)</li><li>[CafePress](https://www.cafepress.com/shop/FOSS4G2024)<ul>
+Yes, the idea is that in addition to obtaining these items with the ticket, you can buy some additional products, and the money raised will go to the TGP. <ul style="margin-top: 6px; margin-bottom: 0"><li>[CafePress](https://www.cafepress.com/shop/FOSS4G2024)<ul>
 {{</ faq >}}
 
 {{< faq "Unexpected cancellation of the event or inability to carry it out" >}}

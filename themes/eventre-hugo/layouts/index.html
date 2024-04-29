@@ -293,6 +293,10 @@
 		section.latest .cardMiddle {
 			margin-top: 30px !important;
 		}
+
+		.headingLatest {
+			display: none;
+		}
 	}
 </style>
 
@@ -303,14 +307,18 @@
 		<div class="belem-background"></div>
 		<div class="row" style="padding-bottom: 0;">
 			<div class="col-sm-1 d-none d-md-block">
+				
 				<img src="{{ "images/FIND-OUT.png" | absURL }}" style="transform: scale(85%); position: absolute; left: 0;" alt="">
 			</div>
-			<div class="headingLatest col-lg-5 col-md-10 offset-md-1">
-				<h3>{{.title | markdownify}}</h3>
-				<p>{{ .content | markdownify}}</p>
-			</div>
+			
 		</div>
-		<div class="row">
+		<div class="row" style="position:relative">
+			<div style="position: absolute; min-width: 200px; left: 140px; top: 40px">
+				<div class="headingLatest ">
+					<h3>{{.title | markdownify}}</h3>
+					<p>{{ .content | markdownify}}</p>
+				</div>
+			</div>
 			<div class="col-md-4 offset-lg-7">
 				<div class="card">
 					<div class="card-block">
@@ -481,6 +489,7 @@
 		<div class="logosx">
 			<div><img src="{{ "images/geochicas.png" | absURL }}" /></div>
 			<div><img src="{{ "images/meninas-da-geo.png" | absURL }}" /></div>
+			<div><img src="{{ "images/logo/qgis-brasil.webp" | absURL }}" style="width: 6rem" /></div>
 		</div>
 		
 	</div>
